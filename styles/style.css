@@ -85,6 +85,9 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  max-height: 1000px;
 }
 .banner__title h1 {
   font-size: 4.95vw;
@@ -102,11 +105,10 @@ input::-webkit-inner-spin-button {
 }
 
 .categories {
-  margin-top: 136px;
+  margin-top: 91px;
 }
 .categories__title {
   width: 100%;
-  height: 13vh;
   border-radius: 11px;
   background: var(--LIGHT-GREY, #f6f6f6);
 }
@@ -119,7 +121,7 @@ input::-webkit-inner-spin-button {
   letter-spacing: 1.32px;
 }
 .categories__list {
-  margin-top: 91px;
+  margin-top: 71px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 31px 1fr 31px 1fr 31px 1fr;
@@ -131,18 +133,26 @@ input::-webkit-inner-spin-button {
   max-width: 336px; /* Максимальная ширина элемента */
   max-height: 336px; /* Максимальная высота элемента */
   border-radius: 11px;
-  background: #929a9c;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
   cursor: pointer;
 }
 .categories__list-item:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translate(1px, -5px);
+          transform: translate(1px, -5px);
 }
 .categories__list-item a {
+  width: 100%;
+  height: 100%;
+  padding: 19px 16px;
+  text-decoration: none;
+  color: #fff;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,20 +160,97 @@ input::-webkit-inner-spin-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 19px 16px;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: inherit;
 }
-.categories__list-item h4 {
+.categories__list-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* чтобы изображение занимало 100% ширины контейнера */
+  height: 100%; /* чтобы изображение занимало 100% высоты контейнера */
+  -o-object-fit: cover;
+     object-fit: cover; /* чтобы изображение сохраняло пропорции и заполняло контейнер */
+  border-radius: 11px;
+  z-index: -1;
+}
+.categories__list .last-item {
+  background: var(--LIGHT-GREY, #f6f6f6);
+  padding: 19px 16px;
+  color: #e1e1e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.categories__list .last-item:hover {
+  -webkit-transform: translateX(11px);
+          transform: translateX(11px);
+}
+.categories__list h4 {
   margin-top: auto;
-  color: #fff;
-  font-size: 22px;
-  font-style: normal;
+  font-size: 1.68vw;
+  font-weight: 700;
+}
+.categories__list p {
+  margin-top: 16px;
+  font-size: 1.15vw;
   font-weight: 400;
-  line-height: 26.154px; /* 118.882% */
+}
+
+.instructions {
+  margin-top: 80px;
+  height: 802px;
+  border-radius: 11px;
+  background: var(--light-blue, #f3f5fc);
+  padding: 22px 0;
+  margin-bottom: 80px;
+}
+.instructions__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.instructions__box-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 52px;
+}
+.instructions__box-bar:first-child {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+}
+.instructions__tips {
+  width: 44%;
+  margin-left: 76px;
+  position: relative;
+}
+.instructions__tips .icon {
+  position: absolute;
+  left: -74px;
+  top: 2px;
+  z-index: 5;
+}
+.instructions h3 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 102%;
+  letter-spacing: 0.88px;
+  margin-bottom: 27px;
+}
+.instructions p {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 114%;
 }
