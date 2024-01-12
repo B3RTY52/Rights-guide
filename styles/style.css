@@ -124,14 +124,14 @@ input::-webkit-inner-spin-button {
   margin-top: 71px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 31px 1fr 31px 1fr 31px 1fr;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
-  gap: 31px; /* Отступ между элементами */
+  -ms-grid-columns: 1fr 1.5vw 1fr 1.5vw 1fr 1.5vw 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5vw;
 }
 .categories__list-item {
-  aspect-ratio: 1/1; /* Сохранение соотношения сторон для квадратных элементов */
-  max-width: 336px; /* Максимальная ширина элемента */
-  max-height: 336px; /* Максимальная высота элемента */
+  aspect-ratio: 1/1;
+  max-width: 336px;
+  max-height: 336px;
   border-radius: 11px;
   -webkit-box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
@@ -186,10 +186,12 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .categories__list .last-item:hover {
-  -webkit-transform: translateX(11px);
-          transform: translateX(11px);
+  -webkit-transform: none;
+          transform: none;
 }
 .categories__list h4 {
   margin-top: auto;
@@ -204,11 +206,34 @@ input::-webkit-inner-spin-button {
 
 .instructions {
   margin-top: 80px;
-  height: 802px;
+  max-height: 802px;
+  height: 80vh;
   border-radius: 11px;
   background: var(--light-blue, #f3f5fc);
-  padding: 22px 0;
+  padding: 2.25vh 0 6vh 0;
   margin-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.instructions h3 {
+  font-size: 2.3vw;
+  font-weight: 700;
+  line-height: 102%;
+  letter-spacing: 0.88px;
+  margin-bottom: 27px;
+}
+.instructions p {
+  font-size: 1.6vw;
+  font-weight: 500;
+  line-height: 114%;
 }
 .instructions__box {
   display: -webkit-box;
@@ -226,7 +251,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 52px;
+  padding: 5.25vh;
 }
 .instructions__box-bar:first-child {
   border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
@@ -239,18 +264,45 @@ input::-webkit-inner-spin-button {
 .instructions__tips .icon {
   position: absolute;
   left: -74px;
-  top: 2px;
+  top: -2px;
   z-index: 5;
 }
-.instructions h3 {
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 102%;
-  letter-spacing: 0.88px;
-  margin-bottom: 27px;
+.instructions__button {
+  max-width: 1147px;
+  width: 80%;
+  border-radius: 11px;
+  background: #fff;
+  -webkit-box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 15%;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
-.instructions p {
-  font-size: 35px;
-  font-weight: 500;
-  line-height: 114%;
+.instructions__button a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 11px;
+  padding: 1vh 1vw;
+}
+.instructions__button h3 {
+  margin: auto 0;
+}
+.instructions__button img {
+  height: 9.5vh;
+}
+.instructions__button:hover {
+  -webkit-transform: translate(5px, -2px);
+          transform: translate(5px, -2px);
 }
