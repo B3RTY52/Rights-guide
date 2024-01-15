@@ -91,9 +91,7 @@ h3 {
 
 .banner {
   height: 100vh;
-  background-image: url("/IMG/Desktop.png");
-  background-size: cover;
-  background-position: center;
+  background: url("/IMG/Desktop.png") center/cover no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,6 +104,13 @@ h3 {
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
   max-height: 1000px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.banner__cases {
+  display: inline-block;
+  margin-top: 12px;
 }
 .banner__title h1 {
   font-size: 4.95vw;
@@ -113,6 +118,7 @@ h3 {
   font-weight: 700;
   line-height: 95%;
   letter-spacing: 1.88px;
+  overflow: hidden;
 }
 .banner__title p {
   margin-top: 43px;
@@ -120,6 +126,14 @@ h3 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.banner .paralax {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .categories {
@@ -324,7 +338,8 @@ h3 {
 
 .bottom {
   margin-top: 150px;
-  height: 721px;
+  height: 80vh;
+  max-height: 721px;
   background: var(--LIGHT-GREY, #f6f6f6);
   padding-top: 128px;
 }
