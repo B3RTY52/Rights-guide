@@ -87,7 +87,7 @@ h3 {
   letter-spacing: 0.88px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .container {
     max-width: 548px;
   }
@@ -144,6 +144,7 @@ h3 {
   font-weight: 400;
 }
 .banner .paralax {
+  height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -152,7 +153,7 @@ h3 {
   z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .banner {
     height: 405px;
     background: url("/IMG/Tablet.png") center/cover no-repeat;
@@ -167,6 +168,9 @@ h3 {
   .banner__title p {
     margin-top: 17px;
     font-size: 13.743px;
+  }
+  .paralax {
+    height: 100%;
   }
 }
 .categories {
@@ -250,6 +254,7 @@ h3 {
           justify-content: flex-end;
   -webkit-box-shadow: none;
           box-shadow: none;
+  cursor: default;
 }
 .categories__list .last-item:hover {
   -webkit-transform: none;
@@ -266,7 +271,7 @@ h3 {
   font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .categories {
     margin-top: 51px;
   }
@@ -301,7 +306,6 @@ h3 {
 .instructions {
   margin-top: 80px;
   max-height: 802px;
-  height: 80vh;
   border-radius: 11px;
   background: var(--light-blue, #f3f5fc);
   padding: 2.25vh 0 6vh 0;
@@ -317,6 +321,7 @@ h3 {
           justify-content: space-between;
 }
 .instructions p {
+  margin-top: 1.35vw;
   font-size: 1.6vw;
   font-weight: 500;
   line-height: 114%;
@@ -354,6 +359,7 @@ h3 {
   z-index: 5;
 }
 .instructions__button {
+  margin-top: 1.6vw;
   max-width: 1147px;
   width: 80%;
   border-radius: 11px;
@@ -386,7 +392,7 @@ h3 {
   margin: auto 0;
 }
 .instructions__button img {
-  height: 9.5vh;
+  height: 5vw;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
@@ -401,7 +407,7 @@ h3 {
           transform: translateX(5px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .instructions {
     margin-top: 40px;
     height: 305px;
@@ -482,7 +488,7 @@ h3 {
 }
 .bottom__title a {
   height: 70%;
-  min-height: 101px;
+  max-height: 101px;
   width: 40%;
   max-width: 474px;
   margin-right: 51px;
@@ -544,7 +550,7 @@ h3 {
   left: -15%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
   .bottom {
     margin-top: 86px;
     height: 281px;
@@ -577,7 +583,7 @@ h3 {
   }
   .bottom__title a img {
     height: 28px;
-    margin-left: 3px;
+    margin-left: 13px;
   }
   .bottom__title a:hover {
     -webkit-transform: translate(3px, -2px);
@@ -596,15 +602,17 @@ h3 {
     height: 100%;
   }
   .bottom .points {
+    width: 104px;
     top: 20%;
     right: -8%;
-    overflow: hidden;
   }
   .bottom .arrow {
+    height: 116px;
     right: 30%;
     top: 90%;
   }
   .bottom .sphere {
+    height: 150px;
     top: -75%;
     left: -15%;
   }
