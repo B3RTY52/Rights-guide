@@ -513,7 +513,7 @@ h3 {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .bottom__title a img {
-  height: 8.5vh;
+  height: 4.8vw;
   margin-left: 3vw;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
