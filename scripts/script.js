@@ -2,9 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    console.log('cakc');
-
-
     const bannerCases = document.querySelector('.banner__cases');
     const cases = ['протоколы', 'допрос', 'обыск', 'полиция', 'задержание',];
     const width = bannerCases.offsetWidth;
@@ -54,14 +51,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function paralax() {
         let scrollPosition = window.scrollY;
-        let parallaxElement = document.querySelector('.paralax');
+        let parallaxElements = document.querySelectorAll('.paralax');
         let parallaxParent = document.querySelector('.banner');
+
         let parallaxParentRect = parallaxParent.getBoundingClientRect();
 
         if (parallaxParentRect.top <= 0 && parallaxParentRect.bottom >= 0) {
-            parallaxElement.style.transform = 'translate(-50%, calc(-50% + ' + scrollPosition * 0.5 + 'px))';
+            parallaxElements.forEach((element) => {
+                element.style.transform = 'translate(-50%, calc(-50% + ' + scrollPosition * 0.5 + 'px))';
+            });
         }
     }
+
+    // function paralax() {
+    //     let scrollPosition = window.scrollY;
+    //     let parallaxElement = document.querySelector('.paralax');
+    //     let parallaxParent = document.querySelector('.banner');
+    //     let parallaxParentRect = parallaxParent.getBoundingClientRect();
+
+    //     if (parallaxParentRect.top <= 0 && parallaxParentRect.bottom >= 0) {
+    //         parallaxElement.style.transform = 'translate(-50%, calc(-50% + ' + scrollPosition * 0.5 + 'px))';
+    //     }
+    // }
 
     // function animate() {
     //     // const width = bannerCases.offsetWidth;
