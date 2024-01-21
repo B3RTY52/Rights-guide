@@ -8,8 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let index = 0;
 
+    animate();
+
+    setInterval(() => {
+        bannerCases.textContent = cases[index];
+        index = (index + 1) % cases.length;
+
+        animate();
+    }, 3000);
+
+    document.addEventListener('scroll', parallax);
+
+
     function animate() {
-        // const width = bannerCases.offsetWidth;
 
         bannerCases.animate([
             { opacity: 1, transform: `translateX(${-width}px)` },
@@ -23,45 +34,22 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Вызываем функцию animate один раз для начала анимации
-    animate();
-
-    // Используем один общий интервал для смены контента и перезапуска анимации
-    setInterval(() => {
-        bannerCases.textContent = cases[index];
-        index = (index + 1) % cases.length;
-
-        // Перезапускаем анимацию
-        animate();
-    }, 3000);
-
-
-    // let index = 0,
-    //     width = 0;
-
-    // animate();
-
-    // setInterval(function () {
-    //     bannerCases.textContent = cases[index];
-    //     index = (index + 1) % cases.length;
-    //     width = bannerCases.offsetWidth;
-    // }, 3000);
-
-    document.addEventListener('scroll', paralax);
-
-    function paralax() {
-        let scrollPosition = window.scrollY;
-        let parallaxElements = document.querySelectorAll('.paralax');
-        let parallaxParent = document.querySelector('.banner');
-
-        let parallaxParentRect = parallaxParent.getBoundingClientRect();
+    function parallax() {
+        const scrollPosition = window.scrollY;
+        const parallaxElements = document.querySelectorAll('.parallax');
+        const parallaxParent = document.querySelector('.banner');
+        const parallaxParentRect = parallaxParent.getBoundingClientRect();
 
         if (parallaxParentRect.top <= 0 && parallaxParentRect.bottom >= 0) {
             parallaxElements.forEach((element) => {
-                element.style.transform = 'translate(-50%, calc(-50% + ' + scrollPosition * 0.5 + 'px))';
+                // Проверяем, отображается ли элемент
+                if (window.getComputedStyle(element).display !== 'none') {
+                    element.style.transform = 'translate(-50%, calc(-50% + ' + scrollPosition * 0.5 + 'px))';
+                }
             });
         }
     }
+
 
     // function paralax() {
     //     let scrollPosition = window.scrollY;
