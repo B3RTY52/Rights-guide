@@ -947,3 +947,67 @@ h3 {
         }
     }
 }
+
+// *** NEW PAGE *** LEKTION ***
+// ***TITLE***
+.lek-title {
+    margin-top: 152px;
+
+    &__img {
+        position: fixed;
+        top: 152px;
+        right: 0;
+        z-index: -1;
+    }
+
+    h1 {
+        font-size: 4.95vw;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 95%;
+        letter-spacing: 1.88px;
+        overflow: hidden;
+    }
+
+    p {
+        margin-top: 65px;
+        line-height: normal;
+        font-size: 1.79vw;
+        font-style: normal;
+        font-weight: 400;
+        width: 80%;
+        max-width: 1221px;
+    }
+}
+
+.lek-cours {
+    margin-top: 72px;
+    padding: 61px 60px 57px 37px;
+    background: var(--light-blue, #f3f5fc);
+    border-radius: 11px;
+    position: relative;
+
+    &__title {
+        h2 {
+        }
+
+        h4 {
+            color: var(--BLUE, #123cce);
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    .starting-dates {
+        position: absolute;
+        border-radius: 45px;
+        border: 5px solid var(--BLUE, #123cce);
+        background: #fff;
+        display: block;
+        top: 56px;
+        right: -24px;
+        padding: 14px 24px 18px 34px;
+    }
+}
