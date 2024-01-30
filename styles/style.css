@@ -884,6 +884,17 @@ h3 {
   max-width: 1221px;
 }
 
+.lek-list {
+  margin-left: 30px;
+}
+.lek-list li {
+  list-style-type: disc;
+  font-size: 1.245vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.13vw;
+}
+
 .lek-cours {
   margin-top: 72px;
   padding: 61px 60px 57px 37px;
@@ -920,14 +931,6 @@ h3 {
 }
 .lek-cours__content-list {
   margin-top: 59px;
-  margin-left: 30px;
-}
-.lek-cours__content-list li {
-  list-style-type: disc;
-  font-size: 1.245vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.13vw;
 }
 .lek-cours__content-right {
   width: 50%;
@@ -995,4 +998,27 @@ h3 {
   position: absolute;
   top: 26px;
   right: 26px;
+}
+.lek-description__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+.lek-description__content-left {
+  margin-right: 84px;
+  max-width: 50%;
+}
+.lek-description__content-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3.6px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  margin: 35px 0 15px;
+}
+.lek-description__content .title-main {
+  text-align: center;
 }
