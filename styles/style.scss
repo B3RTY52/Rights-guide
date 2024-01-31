@@ -981,6 +981,10 @@ h3 {
     }
 }
 
+.extraweight {
+    font-weight: 700;
+}
+
 .lek-list {
     margin-left: 30px;
 
@@ -1114,6 +1118,7 @@ h3 {
     border-radius: 11px;
     background: var(--light-blue, #f3f5fc);
     position: relative;
+    cursor: pointer;
 
     h4 {
         font-size: 32px;
@@ -1128,7 +1133,7 @@ h3 {
     }
 
     &__content {
-        display: flex;
+        display: none;
         margin-top: 50px;
 
         &-left {
@@ -1150,5 +1155,20 @@ h3 {
         .title-main {
             text-align: center;
         }
+
+        p {
+            font-size: 1.245vw;
+            font-style: normal;
+            font-weight: 400;
+            // font-size: 24px;
+            // line-height: 40.92px;
+            line-height: 1.5vw;
+        }
+    }
+
+    &__sub-title {
+        margin-top: 26px;
+        font-weight: 700;
+        display: inline-block;
     }
 }
