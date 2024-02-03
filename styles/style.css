@@ -66,7 +66,7 @@ input::-webkit-inner-spin-button {
 
 main {
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 800px;
 }
 
 .container {
@@ -1004,9 +1004,27 @@ h3 {
   top: 26px;
   right: 26px;
 }
+.lek-description .arrow-toggler {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  cursor: pointer;
+}
+.lek-description .rotated {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
 .lek-description__content {
-  display: none;
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.8s ease;
+  transition: max-height 0.8s ease;
+  -webkit-transition: margin-top 0.5s ease;
+  transition: margin-top 0.5s ease;
 }
 .lek-description__content-left {
   margin-right: 84px;

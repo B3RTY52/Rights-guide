@@ -75,7 +75,7 @@ input::-webkit-inner-spin-button {
 // ***COMMON***
 main {
     overflow: hidden;
-    margin-bottom: 100px;
+    margin-bottom: 800px;
 }
 
 .container {
@@ -1132,9 +1132,21 @@ h3 {
         right: 26px;
     }
 
+    .arrow-toggler {
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+
+    .rotated {
+        transform: rotate(-180deg);
+    }
+
     &__content {
-        display: none;
-        margin-top: 50px;
+        display: flex;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease;
+        transition: margin-top 0.5s ease;
 
         &-left {
             margin-right: 84px;
