@@ -856,28 +856,6 @@ h3 {
     left: -20%;
   }
 }
-.title h1 {
-  font-size: 4.95vw;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 95%;
-  letter-spacing: 1.88px;
-  overflow: hidden;
-}
-.title p {
-  margin-top: 65px;
-  line-height: normal;
-  font-size: 1.79vw;
-  font-style: normal;
-  font-weight: 400;
-  width: 80%;
-  max-width: 1221px;
-}
-
-.extraweight {
-  font-weight: 700;
-}
-
 .description-title {
   font-size: 18px;
   font-weight: 500;
@@ -901,6 +879,10 @@ h3 {
   width: 115px;
 }
 
+.no-margin {
+  margin-top: 0px;
+}
+
 .starting-dates {
   position: absolute;
   border-radius: 45px;
@@ -921,20 +903,79 @@ h3 {
   font-weight: 700;
 }
 
-.lektions {
+.button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 45px;
+  border: 2px solid var(--BLUE, #123cce);
+  background: var(--BLUE, #123cce);
+  color: #fff;
+  text-align: center;
+  font-size: 1.37vw;
+  font-weight: 700;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.button:hover {
+  color: var(--BLUE, #123cce);
+  background: #fff;
+}
+
+@media screen and (min-width: 2001px) {
+  .description-text {
+    font-size: 24px;
+    line-height: 40.92px;
+  }
+  .description-avatar {
+    width: 115px;
+  }
+  .starting-dates {
+    top: 62px;
+    right: -24px;
+    padding: 16px 24px 16px 34px;
+  }
+  .starting-dates-text {
+    font-size: 26px;
+  }
+  .button {
+    font-size: 26px;
+  }
+}
+.title h1 {
+  font-size: 4.95vw;
+  font-weight: 700;
+  line-height: 95%;
+  letter-spacing: 1.88px;
+  overflow: hidden;
+}
+.title p {
+  margin-top: 65px;
+  font-size: 1.79vw;
+  font-weight: 400;
+  width: 80%;
+  max-width: 1221px;
+}
+
+@media screen and (min-width: 2001px) {
+  .title h1 {
+    font-size: 94px;
+  }
+  .title p {
+    font-size: 36px;
+  }
+}
+.lek {
   position: relative;
 }
-.lektions__img {
+.lek__img {
   position: absolute;
   top: 0;
   right: 0;
   z-index: -1;
 }
-
 .lek-title {
   margin-top: 152px;
 }
-
 .lek-list {
   margin-left: 30px;
 }
@@ -945,7 +986,6 @@ h3 {
   font-weight: 400;
   line-height: 2.13vw;
 }
-
 .lek-cours {
   margin-top: 72px;
   padding: 61px 60px 57px 37px;
@@ -1008,25 +1048,6 @@ h3 {
   width: 17.7vw;
   padding: 0.77vw 1.6vw;
 }
-
-.button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  border-radius: 45px;
-  border: 2px solid var(--BLUE, #123cce);
-  background: var(--BLUE, #123cce);
-  color: #fff;
-  text-align: center;
-  font-size: 1.37vw;
-  font-weight: 700;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-.button:hover {
-  color: var(--BLUE, #123cce);
-  background: #fff;
-}
-
 .lek-description {
   margin-top: 16px;
   padding: 29px 77px 34px 39px;
@@ -1079,6 +1100,31 @@ p:first-of-type .lek-description__subtitle {
   margin-top: 0;
 }
 
+@media screen and (min-width: 2001px) {
+  .lek__img {
+    right: 1vw;
+  }
+  .lek-list li {
+    font-size: 24px;
+    line-height: 40.92px;
+  }
+  .lek-cours__content-left-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 52px;
+  }
+  .lek-cours__content-left-bottom p {
+    font-size: 20px;
+  }
+  .lek-cours__content-left-bottom a {
+    width: 337px;
+    padding: 15px 30px;
+  }
+}
 .courses {
   position: relative;
   z-index: 2;
@@ -1143,6 +1189,73 @@ p:first-of-type .lek-description__subtitle {
   margin-left: 1vw;
 }
 
+@media screen and (min-width: 2001px) {
+  .courses {
+    position: relative;
+    z-index: 2;
+    background: rgb(247, 247, 247);
+    margin-top: 152px;
+    padding-bottom: 10vw;
+  }
+  .courses__img {
+    position: absolute;
+  }
+  .courses__img.up {
+    top: 5.8rem;
+    right: -2vw;
+    width: 45vw;
+    max-width: 1200px;
+  }
+  .courses__img.down {
+    bottom: 0;
+    left: 0;
+    width: 15vw;
+    max-width: 480px;
+  }
+  .courses__title {
+    padding-top: 6rem;
+    margin-bottom: 6.2rem;
+  }
+  .courses__info {
+    position: relative;
+    border-radius: 0.69rem;
+    -webkit-box-shadow: 0.25rem 0.25rem 0.63rem 0.06rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0.25rem 0.25rem 0.63rem 0.06rem rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+    padding: 35px 40px 68px 41px;
+    margin-top: 3.1rem;
+  }
+  .courses__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .courses__description-half p {
+    width: 88%;
+  }
+  .courses__description-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .courses__description-bottom .starting-dates-text {
+    margin-right: 44px;
+  }
+  .courses__description-bottom .description-text {
+    margin-left: 38px;
+  }
+  .courses__description-bottom a {
+    padding: 13px 30px;
+    margin-left: 12px;
+  }
+}
 .disclaimer {
   background-color: #fff;
   height: 10vw;
@@ -1165,4 +1278,22 @@ p:first-of-type .lek-description__subtitle {
 }
 .disclaimer img {
   width: 4vw;
+}
+
+@media screen and (min-width: 2001px) {
+  .courses {
+    padding-bottom: 198px;
+  }
+  .courses__img.up {
+    max-width: 1000px;
+  }
+  .courses__info {
+    margin-top: 100px;
+  }
+  .disclaimer {
+    height: 200px;
+  }
+  .disclaimer img {
+    max-width: 80px;
+  }
 }
