@@ -874,17 +874,6 @@ h3 {
   max-width: 1221px;
 }
 
-.starting-dates {
-  position: absolute;
-  border-radius: 45px;
-  border: 5px solid var(--BLUE, #123cce);
-  background: #fff;
-  display: block;
-  top: 3.12vw;
-  right: -1.6vw;
-  padding: 0.8vw 1.35vw 0.8vw 1.53vw;
-}
-
 .extraweight {
   font-weight: 700;
 }
@@ -902,11 +891,34 @@ h3 {
 .description .title-main {
   text-align: center;
 }
-.description p {
+.description-text {
   font-size: 1.245vw;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5vw;
+}
+.description-avatar {
+  width: 115px;
+}
+
+.starting-dates {
+  position: absolute;
+  border-radius: 45px;
+  border: 5px solid var(--BLUE, #123cce);
+  background: #fff;
+  display: block;
+  top: 3.12vw;
+  right: -1.6vw;
+  padding: 0.8vw 1.35vw 0.8vw 1.53vw;
+}
+.starting-dates-text {
+  color: var(--BLUE, #123cce);
+  font-size: 1.37vw;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 700;
 }
 
 .lektions {
@@ -943,11 +955,6 @@ h3 {
 }
 .lek-cours__title h2 {
   width: 80%;
-}
-.lek-cours__title p {
-  color: var(--BLUE, #123cce);
-  font-size: 1.37vw;
-  font-weight: 700;
 }
 .lek-cours__content {
   display: -webkit-box;
@@ -1000,15 +1007,24 @@ h3 {
 .lek-cours__content-left-bottom a {
   width: 17.7vw;
   padding: 0.77vw 1.6vw;
+}
+
+.button {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 45px;
-  border: 1px solid var(--BLUE, #123cce);
+  border: 2px solid var(--BLUE, #123cce);
   background: var(--BLUE, #123cce);
   color: #fff;
   text-align: center;
   font-size: 1.37vw;
   font-weight: 700;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.button:hover {
+  color: var(--BLUE, #123cce);
+  background: #fff;
 }
 
 .lek-description {
@@ -1055,12 +1071,11 @@ h3 {
   margin-right: 84px;
   max-width: 50%;
 }
-.lek-description__sub-title {
+.lek-description__subtitle {
   margin-top: 26px;
-  font-weight: 700;
   display: inline-block;
 }
-p:first-of-type .lek-description__sub-title {
+p:first-of-type .lek-description__subtitle {
   margin-top: 0;
 }
 
@@ -1073,9 +1088,16 @@ p:first-of-type .lek-description__sub-title {
 }
 .courses__img {
   position: absolute;
+}
+.courses__img.up {
   top: 5.8rem;
   right: -2vw;
   width: 45vw;
+}
+.courses__img.down {
+  bottom: 0;
+  left: 0;
+  width: 15vw;
 }
 .courses__title {
   padding-top: 6rem;
@@ -1098,11 +1120,49 @@ p:first-of-type .lek-description__sub-title {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.courses__description-right p, .courses__description-left p {
+.courses__description-half p {
   width: 88%;
+}
+.courses__description-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.courses__description-bottom .starting-dates-text {
+  margin-right: 1.28vw;
+}
+.courses__description-bottom .description-text {
+  margin-left: 1.245vw;
+}
+.courses__description-bottom a {
+  padding: 0.77vw 1.8vw;
+  margin-left: 1vw;
 }
 
 .disclaimer {
   background-color: #fff;
   height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.disclaimer h3 {
+  margin-right: 25px;
+  font-weight: 400;
+}
+.disclaimer h3 .subtitle {
+  text-decoration: underline;
+}
+.disclaimer img {
+  width: 4vw;
 }
