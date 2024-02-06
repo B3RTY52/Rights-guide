@@ -100,6 +100,25 @@ h3 {
     display: none;
 }
 
+.slides {
+    position: relative;
+
+    &-arrow {
+        position: absolute;
+        cursor: pointer;
+
+        &.left {
+            transform: rotateY(180deg);
+            left: -10%;
+            top: 45%;
+        }
+        &.right {
+            right: -10%;
+            top: 45%;
+        }
+    }
+}
+
 @media screen and (min-width: 2001px) {
     h2 {
         font-size: 67px;
@@ -294,6 +313,10 @@ h3 {
             gap: 1.5vw;
         }
 
+        &-list {
+            margin-bottom: 90px;
+        }
+
         &-item {
             aspect-ratio: 1/1;
             max-width: 336px;
@@ -301,6 +324,7 @@ h3 {
             border-radius: 11px;
             box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
             position: relative;
+            z-index: 2;
             transition: transform 0.2s ease;
             cursor: pointer;
 
@@ -314,7 +338,6 @@ h3 {
                 padding: 19px 16px;
                 text-decoration: none;
                 color: #fff;
-                z-index: 1;
                 display: flex;
                 flex-direction: column;
             }
@@ -1595,6 +1618,19 @@ h3 {
                 font-size: 1.2em; /* Размер маркера, при необходимости */
                 margin-right: 8px; /* Расстояние между маркером и текстом абзаца */
             }
+        }
+    }
+
+    &__bottom {
+        margin-top: 113px;
+        padding-top: 75px;
+        background: rgb(255, 255, 255);
+
+        &-subtitle {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 50px;
+            margin-bottom: 44px;
         }
     }
 }
