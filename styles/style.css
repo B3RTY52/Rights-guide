@@ -97,17 +97,16 @@ h3 {
 }
 .slides-arrow {
   position: absolute;
+  top: 45%;
   cursor: pointer;
 }
 .slides-arrow.left {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   left: -10%;
-  top: 45%;
 }
 .slides-arrow.right {
   right: -10%;
-  top: 45%;
 }
 
 @media screen and (min-width: 2001px) {
@@ -274,6 +273,10 @@ h3 {
 }
 .categories__list-list {
   margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 .categories__list-item {
   aspect-ratio: 1/1;
@@ -350,13 +353,6 @@ h3 {
   margin-top: 16px;
   font-size: 1.15vw;
   font-weight: 400;
-}
-.categories__list-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.5vw 1fr 1.5vw 1fr 1.5vw 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5vw;
 }
 
 @media screen and (min-width: 2001px) {
