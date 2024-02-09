@@ -103,17 +103,31 @@ h3 {
 .slides {
     position: relative;
 
+    &-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
     &-arrow {
         position: absolute;
-        top: 45%;
+        height: 6vw;
+        top: 42%;
         cursor: pointer;
 
         &.left {
             transform: rotateY(180deg);
             left: -10%;
+
+            &:hover {
+                transform: rotateY(180deg) translateX(5px);
+            }
         }
         &.right {
             right: -10%;
+
+            &:hover {
+                transform: translateX(5px);
+            }
         }
     }
 }
@@ -315,15 +329,22 @@ h3 {
         &-list {
             margin-bottom: 90px;
             display: flex;
-            overflow: hidden;
+            flex-direction: row;
+            gap: 20px;
+            height: 18vw;
+            // display: grid;
+            // grid-auto-flow: column;
+            // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            // width: min-content;
         }
 
         &-item {
             aspect-ratio: 1/1;
+            flex-grow: 1;
+            flex-shrink: 0;
             max-width: 336px;
             max-height: 336px;
             border-radius: 11px;
-            box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
             position: relative;
             z-index: 2;
             transition: transform 0.2s ease;
@@ -362,12 +383,15 @@ h3 {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            box-shadow: none;
             cursor: default;
 
             &:hover {
                 transform: none;
             }
+        }
+
+        .main {
+            box-shadow: 3px 5px 10px 0px rgba(0, 0, 0, 0.25);
         }
 
         h4 {
@@ -1618,7 +1642,7 @@ h3 {
 
     &__bottom {
         margin-top: 113px;
-        padding-top: 75px;
+        padding: 75px 0;
         background: rgb(255, 255, 255);
 
         &-subtitle {

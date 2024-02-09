@@ -12,29 +12,21 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesField = document.querySelector('.categories__list-list'),
         width = window.getComputedStyle(slides[0]).width;
 
-    slidesField.style.width = 100 * slides.length + '%';
-    slidesField.style.display = 'flex';
     slidesField.style.transition = '0.5s all';
-    slidesWrapper.style.overflow = 'hidden';
-    slides.forEach((slide) => { slide.style.marginRight = `20px` });
-
-    // function strToDigits(str) {
-    //     return +str.replace(/\D/g, '');
-    // }
 
     function strToDigits(str) {
         const match = str.match(/(\d+\.\d+|\d+)/);
         return match ? +match[0] + 20 : NaN;
     }
 
-    console.log(strToDigits(width) / 3, width);
+    console.log(strToDigits(width), width, slides.length);
 
     nextBtn.addEventListener('click', () => {
         if (offset ==
             strToDigits(width) * (slides.length - 1)) {
             offset = 0;
         } else {
-            offset += strToDigits(width);
+            offset += strToDigits(width) * 2;
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
@@ -44,15 +36,10 @@ window.addEventListener('DOMContentLoaded', () => {
         if (offset == 0) {
             offset = strToDigits(width) * (slides.length - 1);
         } else {
-            offset -= strToDigits(width);
+            offset -= strToDigits(width) * 2;
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
     });
 
 });
-
-
-// }
-
-// export default slider;
