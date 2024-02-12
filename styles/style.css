@@ -1405,7 +1405,6 @@ p:first-of-type .lek-description__subtitle {
 .list__menu-list li {
   width: 100%;
   margin-top: 40px;
-  padding: 28px 0 18px 0;
   border-radius: 11px;
   -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.25);
@@ -1425,15 +1424,12 @@ p:first-of-type .lek-description__subtitle {
   display: block;
 }
 .list__menu-title {
-  padding: 0 60px 24px 48px;
-  width: 93%;
-  font-size: 48px;
-  line-height: 53px;
+  padding: 28px 60px 28px 48px;
 }
 .list__menu-about {
   border-top: 1px dashed rgba(0, 0, 0, 0.2);
   width: 100%;
-  padding: 18px 60px 0 48px;
+  padding: 18px 60px 18px 48px;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
