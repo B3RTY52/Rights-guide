@@ -1427,8 +1427,6 @@ p:first-of-type .lek-description__subtitle {
   padding: 28px 60px 28px 48px;
 }
 .list__menu-about {
-  border-top: 1px dashed rgba(0, 0, 0, 0.2);
-  width: 100%;
   padding: 18px 60px 18px 48px;
   font-size: 20px;
   font-weight: 500;
@@ -1436,6 +1434,8 @@ p:first-of-type .lek-description__subtitle {
   letter-spacing: 3px;
   text-align: left;
   text-transform: uppercase;
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .list__menu-about::before {
   content: "•"; /* Юникод для круглого маркера */
@@ -1452,4 +1452,34 @@ p:first-of-type .lek-description__subtitle {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 44px;
+}
+
+.guide__title {
+  width: 100%;
+  margin-top: 112px;
+  border-radius: 11px;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(94, 72, 109);
+  color: rgb(255, 255, 255);
+}
+.guide__title h2 {
+  padding: 44px 37px;
+}
+.guide__title-about {
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  width: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 31px 37px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.guide__title-about::before {
+  content: "•"; /* Юникод для круглого маркера */
+  font-size: 1.2em; /* Размер маркера, при необходимости */
+  margin-right: 8px; /* Расстояние между маркером и текстом абзаца */
 }
