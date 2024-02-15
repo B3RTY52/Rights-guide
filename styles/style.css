@@ -122,6 +122,67 @@ h3 {
           transform: translateX(5px);
 }
 
+.description-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3.6px;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  margin: 35px 0 15px;
+}
+.description .title-main {
+  text-align: center;
+}
+.description-text {
+  font-size: 1.245vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5vw;
+}
+.description-avatar {
+  width: 115px;
+}
+
+.starting-dates {
+  position: absolute;
+  border-radius: 45px;
+  border: 5px solid var(--BLUE, #123cce);
+  background: #fff;
+  display: block;
+  top: 3.12vw;
+  right: -1.6vw;
+  padding: 0.8vw 1.35vw 0.8vw 1.53vw;
+}
+.starting-dates-text {
+  color: var(--BLUE, #123cce);
+  font-size: 1.37vw;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 700;
+}
+
+.button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 45px;
+  border: 2px solid var(--BLUE, #123cce);
+  background: var(--BLUE, #123cce);
+  color: #fff;
+  text-align: center;
+  font-size: 1.37vw;
+  font-weight: 700;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.button:hover {
+  color: var(--BLUE, #123cce);
+  background: #fff;
+}
+
 @media screen and (min-width: 2001px) {
   h2 {
     font-size: 67px;
@@ -129,6 +190,24 @@ h3 {
   h3 {
     font-size: 45px;
     line-height: 45.4px;
+  }
+  .description-text {
+    font-size: 24px;
+    line-height: 40.92px;
+  }
+  .description-avatar {
+    width: 115px;
+  }
+  .starting-dates {
+    top: 62px;
+    right: -24px;
+    padding: 16px 24px 16px 34px;
+  }
+  .starting-dates-text {
+    font-size: 26px;
+  }
+  .button {
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 998px) {
@@ -904,91 +983,6 @@ h3 {
     left: -20%;
   }
 }
-.description-title {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 3.6px;
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 1px solid #000;
-  margin: 35px 0 15px;
-}
-.description .title-main {
-  text-align: center;
-}
-.description-text {
-  font-size: 1.245vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.5vw;
-}
-.description-avatar {
-  width: 115px;
-}
-
-.no-margin {
-  margin-top: 0px;
-}
-
-.starting-dates {
-  position: absolute;
-  border-radius: 45px;
-  border: 5px solid var(--BLUE, #123cce);
-  background: #fff;
-  display: block;
-  top: 3.12vw;
-  right: -1.6vw;
-  padding: 0.8vw 1.35vw 0.8vw 1.53vw;
-}
-.starting-dates-text {
-  color: var(--BLUE, #123cce);
-  font-size: 1.37vw;
-  font-weight: 700;
-}
-
-.subtitle {
-  font-weight: 700;
-}
-
-.button {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  border-radius: 45px;
-  border: 2px solid var(--BLUE, #123cce);
-  background: var(--BLUE, #123cce);
-  color: #fff;
-  text-align: center;
-  font-size: 1.37vw;
-  font-weight: 700;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-.button:hover {
-  color: var(--BLUE, #123cce);
-  background: #fff;
-}
-
-@media screen and (min-width: 2001px) {
-  .description-text {
-    font-size: 24px;
-    line-height: 40.92px;
-  }
-  .description-avatar {
-    width: 115px;
-  }
-  .starting-dates {
-    top: 62px;
-    right: -24px;
-    padding: 16px 24px 16px 34px;
-  }
-  .starting-dates-text {
-    font-size: 26px;
-  }
-  .button {
-    font-size: 26px;
-  }
-}
 .title h1 {
   font-size: 4.95vw;
   font-weight: 700;
@@ -1086,7 +1080,6 @@ h3 {
 .lek-cours__content-left-bottom p {
   color: var(--BLUE, #123cce);
   text-align: center;
-  font-size: 20px;
   font-size: 1.05vw;
   font-style: normal;
   font-weight: 700;
@@ -1454,6 +1447,9 @@ p:first-of-type .lek-description__subtitle {
   margin-bottom: 44px;
 }
 
+.guide {
+  background: rgb(229, 229, 229);
+}
 .guide__title {
   width: 100%;
   margin-top: 112px;
@@ -1482,4 +1478,47 @@ p:first-of-type .lek-description__subtitle {
   content: "•"; /* Юникод для круглого маркера */
   font-size: 1.2em; /* Размер маркера, при необходимости */
   margin-right: 8px; /* Расстояние между маркером и текстом абзаца */
+}
+.guide__content {
+  margin-top: 68px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.guide__content-menu {
+  top: 30px;
+  width: 27%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 5.82px;
+  background: rgb(255, 255, 255);
+  padding: 23px 0 23px 23px;
+}
+.guide__content-menu li {
+  margin-bottom: 8px;
+}
+.guide__content-menu li p {
+  font-size: 1.05vw;
+}
+.guide__content-cards {
+  width: 71%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+.guide__content-item {
+  margin-bottom: 31px;
+  border-radius: 9px;
+  background: rgb(255, 255, 255);
+  padding-bottom: 25px;
+}
+.guide .item-padding {
+  padding: 25px 51px 0;
 }

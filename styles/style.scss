@@ -132,6 +132,79 @@ h3 {
     }
 }
 
+.description {
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3.6px;
+        display: inline-block;
+        text-transform: uppercase;
+        border-bottom: 1px solid #000;
+        margin: 35px 0 15px;
+    }
+
+    .title-main {
+        text-align: center;
+    }
+
+    &-text {
+        font-size: 1.245vw;
+        font-style: normal;
+        font-weight: 400;
+        // font-size: 24px;
+        // line-height: 40.92px;
+        line-height: 1.5vw;
+    }
+
+    &-avatar {
+        width: 115px;
+    }
+}
+
+.starting-dates {
+    position: absolute;
+    border-radius: 45px;
+    border: 5px solid var(--BLUE, #123cce);
+    background: #fff;
+    display: block;
+    // top: 62px;
+    top: 3.12vw;
+    // right: -24px;
+    right: -1.6vw;
+    // padding: 16px 24px 16px 34px;
+    padding: 0.8vw 1.35vw 0.8vw 1.53vw;
+
+    &-text {
+        color: var(--BLUE, #123cce);
+        // font-size: 26px;
+        font-size: 1.37vw;
+        font-weight: 700;
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+}
+
+.button {
+    flex-shrink: 0;
+    border-radius: 45px;
+    border: 2px solid var(--BLUE, #123cce);
+    background: var(--BLUE, #123cce);
+    color: #fff;
+    text-align: center;
+    // font-size: 26px;
+    font-size: 1.37vw;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        color: var(--BLUE, #123cce);
+        background: #fff;
+    }
+}
+
 @media screen and (min-width: 2001px) {
     h2 {
         font-size: 67px;
@@ -140,6 +213,31 @@ h3 {
     h3 {
         font-size: 45px;
         line-height: 45.4px;
+    }
+
+    .description {
+        &-text {
+            font-size: 24px;
+            line-height: 40.92px;
+        }
+
+        &-avatar {
+            width: 115px;
+        }
+    }
+
+    .starting-dates {
+        top: 62px;
+        right: -24px;
+        padding: 16px 24px 16px 34px;
+
+        &-text {
+            font-size: 26px;
+        }
+    }
+
+    .button {
+        font-size: 26px;
     }
 }
 
@@ -1000,111 +1098,6 @@ h3 {
 
 // *** NEW PAGE *** LEKTION ***
 
-// *** COMMON ***
-.description {
-    &-title {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 3.6px;
-        display: inline-block;
-        text-transform: uppercase;
-        border-bottom: 1px solid #000;
-        margin: 35px 0 15px;
-    }
-
-    .title-main {
-        text-align: center;
-    }
-
-    &-text {
-        font-size: 1.245vw;
-        font-style: normal;
-        font-weight: 400;
-        // font-size: 24px;
-        // line-height: 40.92px;
-        line-height: 1.5vw;
-    }
-
-    &-avatar {
-        width: 115px;
-    }
-}
-
-.no-margin {
-    margin-top: 0px;
-}
-
-.starting-dates {
-    position: absolute;
-    border-radius: 45px;
-    border: 5px solid var(--BLUE, #123cce);
-    background: #fff;
-    display: block;
-    // top: 62px;
-    top: 3.12vw;
-    // right: -24px;
-    right: -1.6vw;
-    // padding: 16px 24px 16px 34px;
-    padding: 0.8vw 1.35vw 0.8vw 1.53vw;
-
-    &-text {
-        color: var(--BLUE, #123cce);
-        // font-size: 26px;
-        font-size: 1.37vw;
-        font-weight: 700;
-    }
-}
-
-.subtitle {
-    font-weight: 700;
-}
-
-.button {
-    flex-shrink: 0;
-    border-radius: 45px;
-    border: 2px solid var(--BLUE, #123cce);
-    background: var(--BLUE, #123cce);
-    color: #fff;
-    text-align: center;
-    // font-size: 26px;
-    font-size: 1.37vw;
-    font-weight: 700;
-    transition: background-color 0.2s ease;
-
-    &:hover {
-        color: var(--BLUE, #123cce);
-        background: #fff;
-    }
-}
-
-@media screen and (min-width: 2001px) {
-    .description {
-        &-text {
-            font-size: 24px;
-            line-height: 40.92px;
-        }
-
-        &-avatar {
-            width: 115px;
-        }
-    }
-
-    .starting-dates {
-        top: 62px;
-        right: -24px;
-        padding: 16px 24px 16px 34px;
-
-        &-text {
-            font-size: 26px;
-        }
-    }
-
-    .button {
-        font-size: 26px;
-    }
-}
-
 // ***LEKTION-COMMON-TITLE***
 
 .title {
@@ -1226,7 +1219,7 @@ h3 {
                     p {
                         color: var(--BLUE, #123cce);
                         text-align: center;
-                        font-size: 20px;
+                        // font-size: 20px;
                         font-size: 1.05vw;
                         font-style: normal;
                         font-weight: 700;
@@ -1657,6 +1650,8 @@ h3 {
 
 // ***NEW PAGE *** GUIDE***
 .guide {
+    background: rgb(229, 229, 229);
+
     &__title {
         width: 100%;
         margin-top: 112px;
@@ -1688,5 +1683,46 @@ h3 {
                 margin-right: 8px; /* Расстояние между маркером и текстом абзаца */
             }
         }
+    }
+
+    &__content {
+        margin-top: 68px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: max-content;
+
+        &-menu {
+            top: 30px;
+            width: 27%;
+            height: max-content;
+            border-radius: 5.82px;
+            background: rgb(255, 255, 255);
+            padding: 23px 0 23px 23px;
+
+            li {
+                margin-bottom: 8px;
+                p {
+                    font-size: 1.05vw;
+                    // font-size: 20px;
+                }
+            }
+        }
+
+        &-cards {
+            width: 71%;
+            justify-self: end;
+        }
+
+        &-item {
+            margin-bottom: 31px;
+            border-radius: 9px;
+            background: rgb(255, 255, 255);
+            padding-bottom: 25px;
+        }
+    }
+
+    .item-padding {
+        padding: 25px 51px 0;
     }
 }
