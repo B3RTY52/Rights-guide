@@ -1482,18 +1482,20 @@ p:first-of-type .lek-description__subtitle {
 .guide__content {
   margin-top: 68px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  position: relative;
 }
 .guide__content-menu {
-  top: 30px;
+  position: absolute;
+  top: -30px;
+  margin-top: 30px;
   width: 27%;
   height: -webkit-max-content;
   height: -moz-max-content;

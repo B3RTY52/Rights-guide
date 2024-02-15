@@ -3,18 +3,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const menuList = document.getElementById('sticky-element'),
         menuParent = document.querySelector('.guide__content');
 
+    // Получаем начальные координаты верхней границы menuList относительно верхнего края документа
+    const menuListTop = menuList.getBoundingClientRect().top + window.scrollY;
+
     window.addEventListener('scroll', function () {
-        const menuParentRect = menuParent.getBoundingClientRect();
+        // Вычисляем, насколько прокручена страница относительно верха экрана
+        const scrollPosition = window.scrollY;
 
-        // Вычисляем, насколько пользователь прокрутил страницу от верха контейнера до его низа в процентах
-        const scrollPercentage = Math.max(0, Math.min(window.scrollY / menuParentRect.height, 1));
-
-        // Вычисляем translateY в процентах от высоты контейнера
-        const translateYPercentage = scrollPercentage * 100;
-
-        // Применяем значение translateY
-        menuList.style.transform = `translateY(${translateYPercentage}%)`;
+        // Проверяем, достигла ли верхняя граница menuList верхней границы экрана
+        if (menuListTop <= scrollPosition) {
+            // Если условие выполняется, применяем трансформацию
+            menuList.style.transform = `translateY(${scrollPosition - menuListTop}px)`;
+        } else {
+            // Иначе сбрасываем трансформацию
+            menuList.style.transform = 'translateY(0)';
+        }
     });
-
 });
 

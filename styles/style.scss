@@ -1688,12 +1688,15 @@ h3 {
     &__content {
         margin-top: 68px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        justify-content: end;
         height: max-content;
+        position: relative;
 
         &-menu {
-            top: 30px;
+            position: absolute;
+            top: -30px;
+            margin-top: 30px;
             width: 27%;
             height: max-content;
             border-radius: 5.82px;
