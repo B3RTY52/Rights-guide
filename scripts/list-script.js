@@ -4,12 +4,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let offset = 0;
 
-    const slides = document.
-        querySelector('.categories__list-list').querySelectorAll('.categories__list-item'),
+    const slides = document.querySelectorAll('.slides'),
+        // querySelector('.categories__list-list').querySelectorAll('.categories__list-item'),
         prevBtn = document.querySelector('.left'),
         nextBtn = document.querySelector('.right'),
         slidesWrapper = document.querySelector('.slides-wrapper'),
-        slidesField = document.querySelector('.categories__list-list'),
+        // slidesField = document.querySelector('.categories__list-list'),
+        slidesField = document.querySelector('.slides-field'),
         width = window.getComputedStyle(slides[0]).width;
 
     slidesField.style.transition = '0.5s all';
