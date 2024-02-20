@@ -1,5 +1,3 @@
-'use strict';
-
 document.addEventListener('DOMContentLoaded', function () {
 
     const bannerCases = document.querySelector('.banner__cases');
@@ -49,35 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
-
-
-    // function paralax() {
-    //     let scrollPosition = window.scrollY;
-    //     let parallaxElement = document.querySelector('.paralax');
-    //     let parallaxParent = document.querySelector('.banner');
-    //     let parallaxParentRect = parallaxParent.getBoundingClientRect();
-
-    //     if (parallaxParentRect.top <= 0 && parallaxParentRect.bottom >= 0) {
-    //         parallaxElement.style.transform = 'translate(-50%, calc(-50% + ' + scrollPosition * 0.5 + 'px))';
-    //     }
-    // }
-
-    // function animate() {
-    //     // const width = bannerCases.offsetWidth;
-
-    //     bannerCases.animate([
-    //         { opacity: 1, transform: `translateX(${-width}px)` },
-    //         // { opacity: 1, transform: `translateX(${-bannerCases.offsetWidth}px)` },
-    //         { opacity: 1, transform: 'translateX(0)' },
-    //         { opacity: 1, transform: 'translateX(0)' },
-    //         { opacity: 0, transform: `translateX(${width}px)` },
-    //         { opacity: 0, transform: `translateX(${width}px)` }
-    //         // { opacity: 0, transform: `translateX(${bannerCases.offsetWidth}px)` }
-    //     ], {
-    //         duration: 3000,
-    //         iterations: Infinity
-    //     });
-    // }
 
 });
 

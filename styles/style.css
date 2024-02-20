@@ -1398,14 +1398,6 @@ p:first-of-type .lek-description__subtitle {
 .list__menu-list li {
   width: 100%;
   margin-top: 40px;
-  border-radius: 11px;
-  -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.25);
-  background: rgb(255, 255, 255);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .list__menu-list li:hover {
   -webkit-transform: translate(4px);
@@ -1491,6 +1483,7 @@ p:first-of-type .lek-description__subtitle {
   height: -moz-max-content;
   height: max-content;
   position: relative;
+  overflow: hidden;
 }
 .guide__content-menu {
   position: absolute;
@@ -1521,6 +1514,48 @@ p:first-of-type .lek-description__subtitle {
   background: rgb(255, 255, 255);
   padding-bottom: 25px;
 }
+.guide__content-item:last-child {
+  margin-bottom: 0px;
+}
 .guide .item-padding {
   padding: 25px 51px 0;
+}
+.guide-cards {
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 11px;
+  -webkit-box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(255, 255, 255);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.guide-cards:hover {
+  -webkit-transform: translate(4px);
+          transform: translate(4px);
+}
+
+.slides-field {
+  margin-bottom: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  height: 18vw;
+}
+.slides-field .reducer {
+  width: 24vw;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 14px 13px 0px rgba(0, 0, 0, 0.01);
+          box-shadow: 0px 14px 13px 0px rgba(0, 0, 0, 0.01);
+  background: rgb(239, 239, 239);
+}
+.slides-field .reducer h2 {
+  font-size: 24px;
 }

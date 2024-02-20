@@ -1,6 +1,3 @@
-'use strict';
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const descriptionElement = document.querySelector('.lek-description');
     const contentElement = document.querySelector('.lek-description__content');
