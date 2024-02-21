@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const descriptionElement = document.querySelector('.lek-description');
-    const contentElement = document.querySelector('.lek-description__content');
+    const descriptionElement = document.querySelector('.description');
+    const contentElement = document.querySelector('.description-dropdown');
     const arrowToggler = document.querySelector('.arrow-toggler');
+
+    console.log(descriptionElement, contentElement, arrowToggler);
 
     // Функция для изменения свойства display и поворота стрелки
     function toggleDisplay() {
         if (contentElement.style.maxHeight === '0px'
             || contentElement.style.maxHeight === '') {
             contentElement.style.maxHeight = '100%';
-            contentElement.style.marginTop = '50px'; // Задайте здесь высоту, которую вы хотите показать
             arrowToggler.classList.add('rotated');
             descriptionElement.style.cursor = 'default';
+            if (contentElement.classList.contains('margin50')) {
+                contentElement.style.marginTop = '50px'; // Задайте здесь высоту, которую вы хотите показать
+            }
         } else {
             if (event.target.classList.contains('arrow-toggler')) {
                 contentElement.style.maxHeight = '';

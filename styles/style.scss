@@ -133,6 +133,9 @@ h3 {
 }
 
 .description {
+    position: relative;
+    cursor: pointer;
+
     &-title {
         font-size: 18px;
         font-weight: 500;
@@ -159,6 +162,10 @@ h3 {
 
     &-avatar {
         width: 115px;
+    }
+
+    &-dropdown {
+        transition: max-height 0.5s ease;
     }
 }
 
@@ -1252,8 +1259,6 @@ h3 {
         padding: 29px 77px 34px 39px;
         border-radius: 11px;
         background: var(--light-blue, #f3f5fc);
-        position: relative;
-        cursor: pointer;
 
         h4 {
             font-size: 32px;
