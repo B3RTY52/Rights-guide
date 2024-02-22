@@ -122,6 +122,10 @@ h3 {
           transform: translateX(5px);
 }
 
+.description {
+  position: relative;
+  cursor: pointer;
+}
 .description-title {
   font-size: 18px;
   font-weight: 500;
@@ -143,6 +147,10 @@ h3 {
 }
 .description-avatar {
   width: 115px;
+}
+.description-dropdown {
+  -webkit-transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease;
 }
 
 .starting-dates {
@@ -1094,8 +1102,6 @@ h3 {
   padding: 29px 77px 34px 39px;
   border-radius: 11px;
   background: var(--light-blue, #f3f5fc);
-  position: relative;
-  cursor: pointer;
 }
 .lek-description h4 {
   font-size: 32px;
@@ -1550,7 +1556,9 @@ p:first-of-type .lek-description__subtitle {
   height: 18vw;
 }
 .slides-field .reducer {
-  width: 24vw;
+  width: 36vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 9px;
   -webkit-box-shadow: 0px 14px 13px 0px rgba(0, 0, 0, 0.01);
           box-shadow: 0px 14px 13px 0px rgba(0, 0, 0, 0.01);
@@ -1558,4 +1566,7 @@ p:first-of-type .lek-description__subtitle {
 }
 .slides-field .reducer h2 {
   font-size: 24px;
+}
+.slides-field .reducer p {
+  font-size: 16px;
 }

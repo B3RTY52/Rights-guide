@@ -1763,12 +1763,16 @@ h3 {
     height: 18vw;
 
     .reducer {
-        width: 24vw;
+        width: 36vw;
+        flex-shrink: 0;
         border-radius: 9px;
         box-shadow: 0px 14px 13px 0px rgba(0, 0, 0, 0.01);
         background: rgb(239, 239, 239);
         h2 {
             font-size: 24px;
+        }
+        p {
+            font-size: 16px;
         }
     }
 }

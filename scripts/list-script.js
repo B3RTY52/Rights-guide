@@ -6,10 +6,11 @@ window.addEventListener('DOMContentLoaded', () => {
         // querySelector('.categories__list-list').querySelectorAll('.categories__list-item'),
         prevBtn = document.querySelector('.left'),
         nextBtn = document.querySelector('.right'),
-        slidesWrapper = document.querySelector('.slides'),
         // slidesField = document.querySelector('.categories__list-list'),
         slidesField = document.querySelector('.slides-field'),
         width = window.getComputedStyle(slides[0]).width;
+
+    console.log(width, strToDigits(width) * (slides.length - 1));
 
     slidesField.style.transition = '0.5s all';
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
+        console.log(strToDigits(width), offset, strToDigits(width) * (slides.length - 1));
     });
 
     prevBtn.addEventListener('click', () => {
@@ -37,6 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
+        console.log(strToDigits(width), offset, strToDigits(width) * (slides.length - 1));
     });
 
 });

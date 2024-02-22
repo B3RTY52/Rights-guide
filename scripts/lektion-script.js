@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     console.log(descriptionElement, contentElement, arrowToggler);
 
-    // Функция для изменения свойства display и поворота стрелки
     function toggleDisplay() {
         if (contentElement.style.maxHeight === '0px'
             || contentElement.style.maxHeight === '') {
@@ -13,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             arrowToggler.classList.add('rotated');
             descriptionElement.style.cursor = 'default';
             if (contentElement.classList.contains('margin50')) {
-                contentElement.style.marginTop = '50px'; // Задайте здесь высоту, которую вы хотите показать
+                contentElement.style.marginTop = '50px';
             }
         } else {
             if (event.target.classList.contains('arrow-toggler')) {
