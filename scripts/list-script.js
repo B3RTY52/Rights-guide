@@ -10,25 +10,21 @@ window.addEventListener('DOMContentLoaded', () => {
         slidesField = document.querySelector('.slides-field'),
         width = window.getComputedStyle(slides[0]).width;
 
-    console.log(width, strToDigits(width) * (slides.length - 1));
-
     slidesField.style.transition = '0.5s all';
-
-    function strToDigits(str) {
-        const match = str.match(/(\d+\.\d+|\d+)/);
-        return match ? +match[0] + 20 : NaN;
-    }
 
     nextBtn.addEventListener('click', () => {
         if (offset >=
             strToDigits(width) * (slides.length - 1)) {
             offset = 0;
         } else {
-            offset += strToDigits(width) * 2;
+            if (slidesField.classList.contains('slides-once')) {
+                offset += strToDigits(width);
+            } else {
+                offset += strToDigits(width) * 2;
+            }
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
-        console.log(strToDigits(width), offset, strToDigits(width) * (slides.length - 1));
     });
 
     prevBtn.addEventListener('click', () => {
@@ -39,7 +35,11 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         slidesField.style.transform = `translateX(-${offset}px)`;
-        console.log(strToDigits(width), offset, strToDigits(width) * (slides.length - 1));
     });
 
+
+    function strToDigits(str) {
+        const match = str.match(/(\d+\.\d+|\d+)/);
+        return match ? +match[0] + 20 : NaN;
+    }
 });
