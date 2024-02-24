@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //         menuList.style.transform = 'translateY(0)';
     //     }
     // });
-    const menuList = document.getElementById('sticky-element');
+    const menuList = document.getElementById('sticky-element'),
+        stopPoint = menuList.offsetHeight + 100;
 
     window.addEventListener('scroll', function () {
         const scrollPosition = window.scrollY;
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             .getBoundingClientRect().top + window.scrollY;
         const guideContentBottom = guideContentTop
             + document.querySelector('.guide__content').offsetHeight;
-        const bottomLimit = guideContentBottom - 200; // 200 пикселей до нижней границы
+        const bottomLimit = guideContentBottom - stopPoint; // 200 пикселей до нижней границы
 
         if (scrollPosition >= guideContentTop && scrollPosition <= bottomLimit) {
             menuList.style.transform = `translateY(${scrollPosition - guideContentTop}px)`;
