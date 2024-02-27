@@ -175,8 +175,26 @@ p {
     }
 
     &-dropdown {
-        transition: max-height 0.5s ease;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s linear;
     }
+}
+
+.extrapadding {
+    padding: 22px 51px 25px 44px;
+}
+
+.arrow-toggler {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.rotated {
+    transform: rotate(-180deg);
 }
 
 .starting-dates {
@@ -1276,20 +1294,11 @@ p {
             line-height: 33.627px;
         }
 
-        img {
-            position: absolute;
-            top: 26px;
-            right: 26px;
-        }
-
-        .arrow-toggler {
-            transition: transform 0.5s ease;
-            cursor: pointer;
-        }
-
-        .rotated {
-            transform: rotate(-180deg);
-        }
+        // img {
+        //     position: absolute;
+        //     top: 26px;
+        //     right: 26px;
+        // }
 
         &__content {
             display: flex;
@@ -1739,16 +1748,36 @@ p {
             margin-bottom: 31px;
             border-radius: 9px;
             background: rgb(255, 255, 255);
-            padding-bottom: 25px;
+            padding-top: 25px;
 
             &:last-child {
                 margin-bottom: 0px;
             }
         }
+
+        &-dropdown {
+            border-top: 2px dashed rgba(0, 0, 0, 0.2);
+            padding: 22px 57px 0 44px;
+
+            img {
+                top: 22px;
+                height: 2.3vw;
+            }
+
+            h4 {
+                padding-bottom: 25px;
+            }
+        }
+
+        &-description {
+            border-radius: 0px 0px 9px 9px;
+            background: rgb(239, 239, 239);
+            transition: padding 0.3s linear;
+        }
     }
 
     .item-padding {
-        padding: 25px 51px 0;
+        padding: 0 51px 25px;
     }
 
     &-cards {

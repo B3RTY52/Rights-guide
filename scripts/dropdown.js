@@ -14,12 +14,18 @@ document.addEventListener('DOMContentLoaded', function () {
             if (contentElement.classList.contains('margin50')) {
                 contentElement.style.marginTop = '50px';
             }
+            if (contentElement.classList.contains('guide__content-description')) {
+                contentElement.classList.add('extrapadding');
+            }
         } else {
             if (event.target.classList.contains('arrow-toggler')) {
                 contentElement.style.maxHeight = '';
                 contentElement.style.marginTop = '';
                 arrowToggler.classList.remove('rotated');
                 descriptionElement.style.cursor = '';
+                if (contentElement.classList.contains('guide__content-description')) {
+                    contentElement.classList.remove('extrapadding');
+                }
             }
         }
     }

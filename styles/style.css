@@ -159,8 +159,30 @@ p {
   width: 115px;
 }
 .description-dropdown {
-  -webkit-transition: max-height 0.5s ease;
-  transition: max-height 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s linear;
+  transition: max-height 0.3s linear;
+}
+
+.extrapadding {
+  padding: 22px 51px 25px 44px;
+}
+
+.arrow-toggler {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  cursor: pointer;
+}
+
+.rotated {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .starting-dates {
@@ -1118,22 +1140,6 @@ p {
   font-weight: 500;
   line-height: 33.627px;
 }
-.lek-description img {
-  position: absolute;
-  top: 26px;
-  right: 26px;
-}
-.lek-description .arrow-toggler {
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  cursor: pointer;
-}
-.lek-description .rotated {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
 .lek-description__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1530,13 +1536,30 @@ p:first-of-type .lek-description__subtitle {
   margin-bottom: 31px;
   border-radius: 9px;
   background: rgb(255, 255, 255);
-  padding-bottom: 25px;
+  padding-top: 25px;
 }
 .guide__content-item:last-child {
   margin-bottom: 0px;
 }
+.guide__content-dropdown {
+  border-top: 2px dashed rgba(0, 0, 0, 0.2);
+  padding: 22px 57px 0 44px;
+}
+.guide__content-dropdown img {
+  top: 22px;
+  height: 2.3vw;
+}
+.guide__content-dropdown h4 {
+  padding-bottom: 25px;
+}
+.guide__content-description {
+  border-radius: 0px 0px 9px 9px;
+  background: rgb(239, 239, 239);
+  -webkit-transition: padding 0.3s linear;
+  transition: padding 0.3s linear;
+}
 .guide .item-padding {
-  padding: 25px 51px 0;
+  padding: 0 51px 25px;
 }
 .guide-cards {
   width: 100%;
