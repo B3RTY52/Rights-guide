@@ -1614,3 +1614,7 @@ p:first-of-type .lek-description__subtitle {
   -webkit-transform: translate(0px, -5px);
           transform: translate(0px, -5px);
 }
+
+.aboutus-title {
+  margin: 152px 0 52px;
+}
