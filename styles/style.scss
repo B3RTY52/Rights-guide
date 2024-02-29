@@ -1829,3 +1829,14 @@ p {
 .aboutus-title {
     margin: 152px 0 52px;
 }
+
+.gethelp {
+    margin-top: 80px;
+
+    &__field {
+        border-radius: 11px;
+        background: rgb(243, 245, 252);
+        display: flex;
+        padding: 40px 51px 44px 37px;
+    }
+}

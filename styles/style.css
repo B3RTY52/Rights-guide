@@ -1618,3 +1618,15 @@ p:first-of-type .lek-description__subtitle {
 .aboutus-title {
   margin: 152px 0 52px;
 }
+
+.gethelp {
+  margin-top: 80px;
+}
+.gethelp__field {
+  border-radius: 11px;
+  background: rgb(243, 245, 252);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 51px 44px 37px;
+}
