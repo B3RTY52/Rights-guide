@@ -1778,6 +1778,15 @@ p {
             background: rgb(239, 239, 239);
             transition: padding 0.3s linear;
         }
+
+        &-shablon {
+            color: rgb(18, 55, 186);
+            line-height: 110%;
+            &::before {
+                content: url("/IMG/shablon.png");
+                display: block;
+            }
+        }
     }
 
     .item-padding {

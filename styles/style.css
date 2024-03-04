@@ -1562,6 +1562,14 @@ p:first-of-type .lek-description__subtitle {
   -webkit-transition: padding 0.3s linear;
   transition: padding 0.3s linear;
 }
+.guide__content-shablon {
+  color: rgb(18, 55, 186);
+  line-height: 110%;
+}
+.guide__content-shablon::before {
+  content: url("/IMG/shablon.png");
+  display: block;
+}
 .guide .item-padding {
   padding: 0 51px 25px;
 }
