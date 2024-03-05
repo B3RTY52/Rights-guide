@@ -115,7 +115,7 @@ h4 {
 
     &-arrow {
         position: absolute;
-        height: 6vw;
+        max-height: 6vw;
         top: 44%;
         cursor: pointer;
 
@@ -1756,12 +1756,13 @@ p {
 
             &:last-child {
                 margin-bottom: 0px;
+                padding-bottom: 25px;
             }
         }
 
         &-dropdown {
             border-top: 2px dashed rgba(0, 0, 0, 0.2);
-            padding: 22px 57px 0 44px;
+            padding: 22px 57px 0 51px;
 
             img {
                 top: 22px;
@@ -1782,9 +1783,70 @@ p {
         &-shablon {
             color: rgb(18, 55, 186);
             line-height: 110%;
+            position: relative;
+            padding: 25px 40px;
+            margin-left: 3.3vw;
+
             &::before {
-                content: url("/IMG/shablon.png");
-                display: block;
+                content: "";
+                background-image: url("/IMG/shablon.png");
+                background-size: cover;
+                margin-right: 1vw;
+                height: 2.5vw;
+                width: 2.5vw;
+                position: absolute;
+                left: -1vw;
+                top: 42%;
+                transform: translateY(-40%);
+                z-index: 2;
+            }
+
+            &:last-child {
+                margin-bottom: 1vw;
+            }
+        }
+
+        &-consultation {
+            margin-top: 1vw;
+            margin-left: 51px;
+            padding: 0.8vw 1.3vw;
+            // padding: 10px 21px;
+            max-width: 253px;
+            max-height: 61.07px;
+            border-radius: 4.13px;
+            box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+            background: rgb(18, 60, 206);
+            display: flex;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            transition: transform 0.2s ease;
+
+            img {
+                margin-right: 1vw;
+                max-width: 41px;
+                max-height: 34px;
+            }
+
+            .button-title {
+                display: inline-block;
+                font-size: 18px;
+                line-height: 18px;
+                letter-spacing: 1px;
+                font-weight: 700;
+                text-align: left;
+            }
+
+            .button-link {
+                font-size: 8px;
+                font-weight: 500;
+                letter-spacing: 2px;
+                text-align: left;
+                transition: transform 0.2s ease;
+            }
+
+            &:hover {
+                color: rgb(255, 255, 255);
+                transform: translate(1px, -2px);
             }
         }
     }
@@ -1966,7 +2028,7 @@ p {
                 font-weight: 500;
                 line-height: 2.3vw;
                 // line-height: 75.68px;
-                letter-spacing: 20%;
+                letter-spacing: 2px;
                 text-align: left;
             }
 
@@ -2002,6 +2064,8 @@ p {
         }
     }
 }
+
+// ***NEW PAGE *** HELP-INFO***
 
 main {
     margin-bottom: 100px;

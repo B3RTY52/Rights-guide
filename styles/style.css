@@ -106,7 +106,7 @@ h4 {
 }
 .slides-arrow {
   position: absolute;
-  height: 6vw;
+  max-height: 6vw;
   top: 44%;
   cursor: pointer;
 }
@@ -1544,10 +1544,11 @@ p:first-of-type .lek-description__subtitle {
 }
 .guide__content-item:last-child {
   margin-bottom: 0px;
+  padding-bottom: 25px;
 }
 .guide__content-dropdown {
   border-top: 2px dashed rgba(0, 0, 0, 0.2);
-  padding: 22px 57px 0 44px;
+  padding: 22px 57px 0 51px;
 }
 .guide__content-dropdown img {
   top: 22px;
@@ -1565,10 +1566,76 @@ p:first-of-type .lek-description__subtitle {
 .guide__content-shablon {
   color: rgb(18, 55, 186);
   line-height: 110%;
+  position: relative;
+  padding: 25px 40px;
+  margin-left: 3.3vw;
 }
 .guide__content-shablon::before {
-  content: url("/IMG/shablon.png");
-  display: block;
+  content: "";
+  background-image: url("/IMG/shablon.png");
+  background-size: cover;
+  margin-right: 1vw;
+  height: 2.5vw;
+  width: 2.5vw;
+  position: absolute;
+  left: -1vw;
+  top: 42%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+  z-index: 2;
+}
+.guide__content-shablon:last-child {
+  margin-bottom: 1vw;
+}
+.guide__content-consultation {
+  margin-top: 1vw;
+  margin-left: 51px;
+  padding: 0.8vw 1.3vw;
+  max-width: 253px;
+  max-height: 61.07px;
+  border-radius: 4.13px;
+  -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  background: rgb(18, 60, 206);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgb(255, 255, 255);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.guide__content-consultation img {
+  margin-right: 1vw;
+  max-width: 41px;
+  max-height: 34px;
+}
+.guide__content-consultation .button-title {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: left;
+}
+.guide__content-consultation .button-link {
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: left;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.guide__content-consultation:hover {
+  color: rgb(255, 255, 255);
+  -webkit-transform: translate(1px, -2px);
+          transform: translate(1px, -2px);
 }
 .guide .item-padding {
   padding: 0 51px 25px;
@@ -1769,7 +1836,7 @@ p:first-of-type .lek-description__subtitle {
   font-style: 1vw;
   font-weight: 500;
   line-height: 2.3vw;
-  letter-spacing: 20%;
+  letter-spacing: 2px;
   text-align: left;
 }
 .joinus__content-right img {
