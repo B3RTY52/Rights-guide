@@ -1980,9 +1980,16 @@ p {
 .joinus {
     margin-top: 60px;
 
+    .bggrey {
+        background: rgb(247, 247, 247);
+    }
+
+    .bgblue {
+        background: rgb(243, 245, 252);
+    }
+
     &__field {
         border-radius: 11px;
-        background: rgb(247, 247, 247);
         padding: 40px 51px 44px 37px;
     }
 
