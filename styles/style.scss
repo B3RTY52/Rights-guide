@@ -2017,7 +2017,7 @@ p {
                 align-items: center;
                 border-radius: 11px;
                 // padding: 10px 21px;
-                padding: 1vw;
+                padding: 1vw 2vw;
 
                 &:hover {
                     transform: translate(5px, -2px);
@@ -2039,7 +2039,7 @@ p {
                 text-align: left;
             }
 
-            img {
+            .tg-logo {
                 height: 5vw;
                 margin-right: 2vw;
             }
@@ -2067,6 +2067,21 @@ p {
                 left: -5vw;
                 z-index: 1;
                 transform: rotate(-10deg);
+            }
+        }
+
+        .shablons-img {
+            margin: auto;
+            width: 100%;
+            max-width: 621px;
+            max-height: 224px;
+        }
+
+        .gd {
+            margin-left: 10vw;
+            &-img {
+                margin: auto;
+                width: 100%;
             }
         }
     }

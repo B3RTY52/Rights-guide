@@ -1827,7 +1827,7 @@ p:first-of-type .lek-description__subtitle {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 11px;
-  padding: 1vw;
+  padding: 1vw 2vw;
 }
 .joinus__content-right a:hover {
   -webkit-transform: translate(5px, -2px);
@@ -1844,7 +1844,7 @@ p:first-of-type .lek-description__subtitle {
   letter-spacing: 2px;
   text-align: left;
 }
-.joinus__content-right img {
+.joinus__content-right .tg-logo {
   height: 5vw;
   margin-right: 2vw;
 }
@@ -1869,6 +1869,19 @@ p:first-of-type .lek-description__subtitle {
   z-index: 1;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+}
+.joinus__content .shablons-img {
+  margin: auto;
+  width: 100%;
+  max-width: 621px;
+  max-height: 224px;
+}
+.joinus__content .gd {
+  margin-left: 10vw;
+}
+.joinus__content .gd-img {
+  margin: auto;
+  width: 100%;
 }
 
 main {
