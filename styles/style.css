@@ -235,6 +235,12 @@ p {
     font-size: 45px;
     line-height: 45.4px;
   }
+  h4 {
+    font-size: 26px;
+  }
+  p {
+    font-size: 24px;
+  }
   .description-text {
     font-size: 24px;
     line-height: 40.92px;
@@ -1574,7 +1580,6 @@ p:first-of-type .lek-description__subtitle {
   content: "";
   background-image: url("/IMG/shablon.png");
   background-size: cover;
-  margin-right: 1vw;
   height: 2.5vw;
   width: 2.5vw;
   position: absolute;
@@ -1694,6 +1699,57 @@ p:first-of-type .lek-description__subtitle {
           transform: translate(0px, -5px);
 }
 
+@media screen and (min-width: 2001px) {
+  .guide__title {
+    margin-top: 168px;
+  }
+  .guide__content {
+    margin-top: 88px;
+  }
+  .guide__content-menu li {
+    margin-bottom: 11px;
+  }
+  .guide__content-menu li p {
+    font-size: 21px;
+  }
+  .guide__content-item {
+    margin-bottom: 41px;
+    padding-top: 33px;
+  }
+  .guide__content-item:last-child {
+    padding-bottom: 33px;
+  }
+  .guide__content-dropdown img {
+    top: 16px;
+    height: 46px;
+  }
+  .guide__content-dropdown h4 {
+    padding-bottom: 33px;
+  }
+  .guide__content-shablon {
+    padding: 35px 40px;
+    margin-left: 76px;
+  }
+  .guide__content-shablon::before {
+    height: 64px;
+    width: 64px;
+    left: -39px;
+  }
+  .guide__content-shablon:last-child {
+    margin-bottom: 39px;
+  }
+  .guide__content-consultation {
+    margin-top: 32px;
+    margin-left: 51px;
+    padding: 10px 21px;
+  }
+  .guide__content-consultation img {
+    margin-right: 30px;
+  }
+  .guide-cards {
+    padding: 28px 0 18px 0;
+  }
+}
 .aboutus h3 {
   font-size: 2.3vw;
   font-weight: 700;

@@ -254,6 +254,14 @@ p {
         line-height: 45.4px;
     }
 
+    h4 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
     .description {
         &-text {
             font-size: 24px;
@@ -1791,7 +1799,6 @@ p {
                 content: "";
                 background-image: url("/IMG/shablon.png");
                 background-size: cover;
-                margin-right: 1vw;
                 height: 2.5vw;
                 width: 2.5vw;
                 position: absolute;
@@ -1896,6 +1903,76 @@ p {
 
         &:hover {
             transform: translate(0px, -5px);
+        }
+    }
+}
+
+@media screen and (min-width: 2001px) {
+    .guide {
+        &__title {
+            margin-top: 168px;
+        }
+
+        &__content {
+            margin-top: 88px;
+
+            &-menu {
+                li {
+                    margin-bottom: 11px;
+                    p {
+                        font-size: 21px;
+                    }
+                }
+            }
+
+            &-item {
+                margin-bottom: 41px;
+                padding-top: 33px;
+
+                &:last-child {
+                    padding-bottom: 33px;
+                }
+            }
+
+            &-dropdown {
+                img {
+                    top: 16px;
+                    height: 46px;
+                }
+
+                h4 {
+                    padding-bottom: 33px;
+                }
+            }
+
+            &-shablon {
+                padding: 35px 40px;
+                margin-left: 76px;
+
+                &::before {
+                    height: 64px;
+                    width: 64px;
+                    left: -39px;
+                }
+
+                &:last-child {
+                    margin-bottom: 39px;
+                }
+            }
+
+            &-consultation {
+                margin-top: 32px;
+                margin-left: 51px;
+                padding: 10px 21px;
+
+                img {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        &-cards {
+            padding: 28px 0 18px 0;
         }
     }
 }
