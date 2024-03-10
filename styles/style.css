@@ -1675,6 +1675,7 @@ p:first-of-type .lek-description__subtitle {
 }
 .slides-field .reducer {
   width: 37vw;
+  max-width: 552px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 9px;
@@ -1748,6 +1749,15 @@ p:first-of-type .lek-description__subtitle {
   }
   .guide-cards {
     padding: 28px 0 18px 0;
+  }
+  .slides-field .reducer h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .slides-field .reducer p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
   }
 }
 .aboutus h3 {
