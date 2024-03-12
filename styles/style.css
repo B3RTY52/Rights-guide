@@ -1525,9 +1525,10 @@ p:first-of-type .lek-description__subtitle {
   font-size: 1.05vw;
 }
 .guide__content-cards {
-  width: 71%;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-left: 30px;
 }
 .guide__content-item {
   margin-bottom: 31px;
@@ -1943,6 +1944,6 @@ main {
 
 .sticky { /* Для поддержки в Safari */
   position: sticky;
-  top: 0;
+  top: 30px;
   left: 0;
 }

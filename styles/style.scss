@@ -1754,8 +1754,8 @@ p {
         }
 
         &-cards {
-            width: 71%;
-            justify-self: end;
+            height: max-content;
+            margin-left: 30px;
         }
 
         &-item {
@@ -2190,6 +2190,6 @@ main {
 .sticky {
     position: -webkit-sticky; /* Для поддержки в Safari */
     position: sticky;
-    top: 0;
+    top: 30px;
     left: 0;
 }
