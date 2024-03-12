@@ -73,7 +73,7 @@ input::-webkit-inner-spin-button {
 }
 
 // ***COMMON***
-main {
+.main-page {
     overflow: hidden;
 }
 
@@ -1689,10 +1689,10 @@ p {
 // ***NEW PAGE *** GUIDE***
 .guide {
     background: rgb(229, 229, 229);
+    padding-top: 112px;
 
     &__title {
         width: 100%;
-        margin-top: 112px;
         border-radius: 11px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         background: rgb(94, 72, 109);
@@ -1727,17 +1727,19 @@ p {
         margin-top: 68px;
         width: 100%;
         display: grid;
-        justify-content: end;
-        height: max-content;
-        position: relative;
-        overflow: hidden;
+        grid-template-columns: 1fr 3fr; /* Первая колонка - 1/4, вторая - 3/4 */
+        // grid-column-gap: 30px;
+        // justify-content: end;
+        // height: max-content;
+        // position: relative;
+        // overflow: hidden;
 
         &-menu {
-            position: absolute;
-            top: -30px;
-            margin-top: 30px;
-            width: 27%;
-            height: max-content;
+            // position: absolute;
+            // top: -30px;
+            // margin-top: 30px;
+            // width: 27%;
+            // height: max-content;
             border-radius: 5.82px;
             background: rgb(255, 255, 255);
             padding: 23px 0 23px 23px;
@@ -2183,4 +2185,11 @@ p {
 
 main {
     margin-bottom: 100px;
+}
+
+.sticky {
+    position: -webkit-sticky; /* Для поддержки в Safari */
+    position: sticky;
+    top: 0;
+    left: 0;
 }
