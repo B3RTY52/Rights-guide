@@ -101,6 +101,11 @@ h4 {
     font-weight: 700;
 }
 
+p {
+    font-size: 1.15vw;
+    font-weight: 400;
+}
+
 .mobile {
     display: none;
 }
@@ -137,111 +142,12 @@ h4 {
     }
 }
 
-p {
-    font-size: 1.15vw;
-    font-weight: 400;
-}
-
-.description {
-    position: relative;
-    cursor: pointer;
-
-    &-title {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 20px;
-        letter-spacing: 3.6px;
-        display: inline-block;
-        text-transform: uppercase;
-        border-bottom: 1px solid #000;
-        margin: 35px 0 15px;
-    }
-
-    .title-main {
-        text-align: center;
-    }
-
-    &-text {
-        font-size: 1.245vw;
-        font-style: normal;
-        font-weight: 400;
-        // font-size: 24px;
-        // line-height: 40.92px;
-        line-height: 1.5vw;
-    }
-
-    &-avatar {
-        width: 115px;
-    }
-
-    &-dropdown {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s linear;
-    }
-}
-
-.extrapadding {
-    padding: 22px 51px 25px 44px;
-}
-
-.arrow-toggler {
-    position: absolute;
-    top: 26px;
-    right: 26px;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-}
-
-.rotated {
-    transform: rotate(-180deg);
-}
-
-.starting-dates {
-    position: absolute;
-    border-radius: 45px;
-    border: 5px solid var(--BLUE, #123cce);
-    background: #fff;
-    display: block;
-    // top: 62px;
-    top: 3.12vw;
-    // right: -24px;
-    right: -1.6vw;
-    // padding: 16px 24px 16px 34px;
-    padding: 0.8vw 1.35vw 0.8vw 1.53vw;
-
-    &-text {
-        color: var(--BLUE, #123cce);
-        // font-size: 26px;
-        font-size: 1.37vw;
-        font-weight: 700;
-    }
-}
-
 .subtitle {
     font-weight: 700;
 }
 
 .uppercase {
     text-transform: uppercase;
-}
-
-.button {
-    flex-shrink: 0;
-    border-radius: 45px;
-    border: 2px solid var(--BLUE, #123cce);
-    background: var(--BLUE, #123cce);
-    color: #fff;
-    text-align: center;
-    // font-size: 26px;
-    font-size: 1.37vw;
-    font-weight: 700;
-    transition: background-color 0.2s ease;
-
-    &:hover {
-        color: var(--BLUE, #123cce);
-        background: #fff;
-    }
 }
 
 @media screen and (min-width: 2001px) {
@@ -260,31 +166,6 @@ p {
 
     p {
         font-size: 24px;
-    }
-
-    .description {
-        &-text {
-            font-size: 24px;
-            line-height: 40.92px;
-        }
-
-        &-avatar {
-            width: 115px;
-        }
-    }
-
-    .starting-dates {
-        top: 62px;
-        right: -24px;
-        padding: 16px 24px 16px 34px;
-
-        &-text {
-            font-size: 26px;
-        }
-    }
-
-    .button {
-        font-size: 26px;
     }
 }
 
@@ -477,10 +358,6 @@ p {
             flex-direction: row;
             gap: 20px;
             height: 18vw;
-            // display: grid;
-            // grid-auto-flow: column;
-            // grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            // width: min-content;
         }
 
         &-item {
@@ -1146,7 +1023,6 @@ p {
 // *** NEW PAGE *** LEKTION ***
 
 // ***LEKTION-COMMON-TITLE***
-
 .title {
     h1 {
         font-size: 4.95vw;
@@ -1164,6 +1040,130 @@ p {
         max-width: 1221px;
     }
 }
+
+// ***NOT*EDITED***
+.description {
+    position: relative;
+    cursor: pointer;
+
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3.6px;
+        display: inline-block;
+        text-transform: uppercase;
+        border-bottom: 1px solid #000;
+        margin: 35px 0 15px;
+    }
+
+    .title-main {
+        text-align: center;
+    }
+
+    &-text {
+        font-size: 1.245vw;
+        font-style: normal;
+        font-weight: 400;
+        // font-size: 24px;
+        // line-height: 40.92px;
+        line-height: 1.5vw;
+    }
+
+    &-avatar {
+        width: 115px;
+    }
+
+    &-dropdown {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s linear;
+    }
+}
+
+.extrapadding {
+    padding: 22px 51px 25px 44px;
+}
+
+.arrow-toggler {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.rotated {
+    transform: rotate(-180deg);
+}
+
+.starting-dates {
+    position: absolute;
+    border-radius: 45px;
+    border: 5px solid var(--BLUE, #123cce);
+    background: #fff;
+    display: block;
+    // top: 62px;
+    top: 3.12vw;
+    // right: -24px;
+    right: -1.6vw;
+    // padding: 16px 24px 16px 34px;
+    padding: 0.8vw 1.35vw 0.8vw 1.53vw;
+
+    &-text {
+        color: var(--BLUE, #123cce);
+        // font-size: 26px;
+        font-size: 1.37vw;
+        font-weight: 700;
+    }
+}
+
+.button {
+    flex-shrink: 0;
+    border-radius: 45px;
+    border: 2px solid var(--BLUE, #123cce);
+    background: var(--BLUE, #123cce);
+    color: #fff;
+    text-align: center;
+    // font-size: 26px;
+    font-size: 1.37vw;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        color: var(--BLUE, #123cce);
+        background: #fff;
+    }
+}
+
+@media screen and (min-width: 2001px) {
+    .description {
+        &-text {
+            font-size: 24px;
+            line-height: 40.92px;
+        }
+
+        &-avatar {
+            width: 115px;
+        }
+    }
+
+    .starting-dates {
+        top: 62px;
+        right: -24px;
+        padding: 16px 24px 16px 34px;
+
+        &-text {
+            font-size: 26px;
+        }
+    }
+
+    .button {
+        font-size: 26px;
+    }
+}
+
+// ***NOT*EDITED***
 
 @media screen and (min-width: 2001px) {
     .title {
@@ -1372,7 +1372,7 @@ p {
     }
 }
 
-// ***COURSE***
+// ***COURSES***
 .courses {
     position: relative;
     z-index: 2;
@@ -1880,6 +1880,13 @@ p {
     }
 }
 
+.sticky {
+    position: -webkit-sticky; /* Для поддержки в Safari */
+    position: sticky;
+    top: 30px;
+    left: 0;
+}
+
 .slides-field {
     margin-bottom: 90px;
     display: flex;
@@ -1994,7 +2001,7 @@ p {
     }
 }
 
-// ***NEW PAGE****ABOUT US***
+// ***NEW PAGES****ABOUT US****HELP-INFO***
 
 .aboutus {
     h3 {
@@ -2179,17 +2186,4 @@ p {
             }
         }
     }
-}
-
-// ***NEW PAGE *** HELP-INFO***
-
-main {
-    margin-bottom: 100px;
-}
-
-.sticky {
-    position: -webkit-sticky; /* Для поддержки в Safari */
-    position: sticky;
-    top: 30px;
-    left: 0;
 }

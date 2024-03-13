@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             contentElement.style.maxHeight = '100%';
             arrowToggler.classList.add('rotated');
             descriptionElement.style.cursor = 'default';
-            if (contentElement.classList.contains('margin50')) {
+            if (contentElement.classList.contains('add-margin-top')) {
                 contentElement.style.marginTop = '50px';
             }
             if (contentElement.classList.contains('guide__content-description')) {
