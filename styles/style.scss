@@ -73,10 +73,6 @@ input::-webkit-inner-spin-button {
 }
 
 // ***COMMON***
-.main-page {
-    overflow: hidden;
-}
-
 .container {
     width: 75.58vw;
     max-width: 1436px;
@@ -92,7 +88,7 @@ h2 {
 h3 {
     font-size: 2.3vw;
     font-weight: 700;
-    line-height: 102%;
+    line-height: 2.32vw;
     letter-spacing: 0.88px;
 }
 
@@ -120,7 +116,8 @@ p {
 
     &-arrow {
         position: absolute;
-        max-height: 6vw;
+        height: 6vw;
+        min-height: 80px;
         top: 44%;
         cursor: pointer;
 
@@ -183,6 +180,11 @@ p {
         font-size: 16.798px;
         letter-spacing: 0.336px;
     }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -205,6 +207,11 @@ p {
         letter-spacing: 0.356px;
         line-height: 18.36px;
     }
+}
+
+// ***NEW PAGE*** ***MAIN***
+.main-page {
+    overflow: hidden;
 }
 
 // ***BANNER***
@@ -1041,7 +1048,6 @@ p {
     }
 }
 
-// ***NOT*EDITED***
 .description {
     position: relative;
     cursor: pointer;
@@ -1161,11 +1167,7 @@ p {
     .button {
         font-size: 26px;
     }
-}
 
-// ***NOT*EDITED***
-
-@media screen and (min-width: 2001px) {
     .title {
         h1 {
             font-size: 94px;
