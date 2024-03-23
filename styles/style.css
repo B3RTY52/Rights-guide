@@ -164,6 +164,10 @@ p {
     font-size: 16.798px;
     letter-spacing: 0.336px;
   }
+  h4 {
+    font-size: 20px;
+    line-height: 25.5px;
+  }
   p {
     font-size: 18px;
     line-height: 24px;
@@ -936,7 +940,7 @@ p {
 .title h1 {
   font-size: 4.95vw;
   font-weight: 700;
-  line-height: 95%;
+  line-height: 102%;
   letter-spacing: 1.88px;
   overflow: hidden;
 }
@@ -946,6 +950,7 @@ p {
   font-weight: 400;
   width: 80%;
   max-width: 1221px;
+  letter-spacing: 0px;
 }
 
 .description {
@@ -1036,6 +1041,14 @@ p {
 }
 
 @media screen and (min-width: 2001px) {
+  .title h1 {
+    font-size: 94px;
+    line-height: 95px;
+  }
+  .title p {
+    font-size: 36px;
+    line-height: 45px;
+  }
   .description-text {
     font-size: 24px;
     line-height: 40.92px;
@@ -1059,6 +1072,91 @@ p {
   }
   .title p {
     font-size: 36px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .title h1 {
+    font-size: 4.95vw;
+    font-weight: 700;
+    line-height: 102%;
+    letter-spacing: 1.88px;
+    overflow: hidden;
+  }
+  .title p {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .description-title {
+    font-size: 14px;
+    line-height: 63.64px;
+    letter-spacing: 3px;
+    margin: 15px 0 15px;
+  }
+  .description-text {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0px;
+  }
+  .description-avatar {
+    width: 115px;
+  }
+  .description-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.3s linear;
+    transition: max-height 0.3s linear;
+  }
+  .extrapadding {
+    padding: 22px 51px 25px 44px;
+  }
+  .arrow-toggler {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    cursor: pointer;
+  }
+  .rotated {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  .starting-dates {
+    position: absolute;
+    border-radius: 45px;
+    border: 5px solid var(--BLUE, #123cce);
+    background: #fff;
+    display: block;
+    top: 3.12vw;
+    right: -1.6vw;
+    padding: 0.8vw 1.35vw 0.8vw 1.53vw;
+  }
+  .starting-dates-text {
+    color: var(--BLUE, #123cce);
+    font-size: 1.37vw;
+    font-weight: 700;
+  }
+  .button {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    border-radius: 45px;
+    border: 2px solid var(--BLUE, #123cce);
+    background: var(--BLUE, #123cce);
+    color: #fff;
+    text-align: center;
+    font-size: 1.37vw;
+    font-weight: 700;
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+  }
+  .button:hover {
+    color: var(--BLUE, #123cce);
+    background: #fff;
   }
 }
 .lek {
@@ -1179,12 +1277,141 @@ p:first-of-type .lek-description__subtitle {
 }
 
 @media screen and (min-width: 2001px) {
+  .lek-list li {
+    font-size: 24px;
+    line-height: 40.92px;
+  }
+  .lek-cours__content-left-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 52px;
+  }
+  .lek-cours__content-left-bottom p {
+    font-size: 20px;
+  }
+  .lek-cours__content-left-bottom a {
+    width: 337px;
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .lek__img {
+    top: -80px;
+    right: 1vw;
+  }
+  .lek-title {
+    margin-top: 130px;
+  }
+  .lek-list li {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0px;
+  }
+  .lek-cours {
+    margin-top: 62px;
+    padding: 47px 20px 30px 20px;
+  }
+  .lek-cours__title h2 {
+    width: 100%;
+  }
+  .lek-cours__content {
+    display: block;
+    margin-top: 26px;
+  }
+  .lek-cours__content-list {
+    margin-top: 59px;
+  }
+  .lek-cours__content-right {
+    width: 50%;
+  }
+  .lek-cours__content-right iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 677px;
+    max-height: 400px;
+  }
+  .lek-cours__content-left {
+    width: 100%;
+  }
+  .lek-cours__content-left h3 {
+    font-size: 20px;
+    line-height: 0px;
+    letter-spacing: 0px;
+  }
+  .lek-cours__content-left-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 52px;
+  }
+  .lek-cours__content-left-bottom p {
+    color: var(--BLUE, #123cce);
+    text-align: center;
+    font-size: 1.05vw;
+    font-style: normal;
+    font-weight: 700;
+    margin: auto 52px auto 45px;
+  }
+  .lek-cours__content-left-bottom a {
+    width: 17.7vw;
+    padding: 0.77vw 1.6vw;
+  }
+  .lek-description {
+    margin-top: 16px;
+    padding: 29px 77px 34px 39px;
+    border-radius: 11px;
+    background: var(--light-blue, #f3f5fc);
+  }
+  .lek-description h4 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 33.627px;
+  }
+  .lek-description__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s ease;
+    transition: max-height 0.8s ease;
+    -webkit-transition: margin-top 0.5s ease;
+    transition: margin-top 0.5s ease;
+  }
+  .lek-description__content-left {
+    margin-right: 84px;
+    max-width: 50%;
+  }
+  .lek-description__subtitle {
+    margin-top: 26px;
+    display: inline-block;
+  }
+  p:first-of-type .lek-description__subtitle {
+    margin-top: 0;
+  }
   .lek__img {
     right: 1vw;
   }
   .lek-list li {
-    font-size: 24px;
-    line-height: 40.92px;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0px;
+  }
+  .lek-cours__content {
+    display: block;
+  }
+  .lek-cours__content-right {
+    width: 100%;
+  }
+  .lek-cours__content-left {
+    width: 100%;
   }
   .lek-cours__content-left-bottom {
     display: -webkit-box;
