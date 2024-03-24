@@ -10,9 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
             || contentElement.style.maxHeight === '') {
             contentElement.style.maxHeight = '100%';
             arrowToggler.classList.add('rotated');
+            // contentElement.classList.add('description-droped');
             descriptionElement.style.cursor = 'default';
-            if (contentElement.classList.contains('add-margin-top')) {
-                contentElement.style.marginTop = '50px';
+            if (contentElement.classList.contains('add-margin-top')
+                // && window.innerWidth > 1024) 
+            ) {
+                contentElement.style.marginTop = '35px';
             }
             if (contentElement.classList.contains('guide__content-description')) {
                 contentElement.classList.add('extrapadding');
@@ -22,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 contentElement.style.maxHeight = '';
                 contentElement.style.marginTop = '';
                 arrowToggler.classList.remove('rotated');
+                // contentElement.classList.remove('description-droped');
                 descriptionElement.style.cursor = '';
                 if (contentElement.classList.contains('guide__content-description')) {
                     contentElement.classList.remove('extrapadding');

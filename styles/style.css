@@ -94,6 +94,10 @@ p {
   font-weight: 400;
 }
 
+.tablet {
+  display: none;
+}
+
 .mobile {
   display: none;
 }
@@ -152,9 +156,12 @@ p {
     font-size: 24px;
   }
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1024px) {
   .container {
     max-width: 548px;
+  }
+  .tablet {
+    display: block;
   }
   h2 {
     font-size: 30px;
@@ -982,12 +989,11 @@ p {
 .description-dropdown {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.3s linear;
-  transition: max-height 0.3s linear;
+  -webkit-transition: max-height 0.9s linear;
+  transition: max-height 0.9s linear;
 }
-
-.extrapadding {
-  padding: 22px 51px 25px 44px;
+.description-droped {
+  max-height: 100%;
 }
 
 .arrow-toggler {
@@ -1074,7 +1080,7 @@ p {
     font-size: 36px;
   }
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1024px) {
   .title h1 {
     font-size: 4.95vw;
     font-weight: 700;
@@ -1091,9 +1097,9 @@ p {
   }
   .description-title {
     font-size: 14px;
-    line-height: 63.64px;
+    line-height: 20px;
     letter-spacing: 3px;
-    margin: 15px 0 15px;
+    margin: 25px 0 15px;
   }
   .description-text {
     font-size: 18px;
@@ -1101,45 +1107,21 @@ p {
     letter-spacing: 0px;
   }
   .description-avatar {
-    width: 115px;
-  }
-  .description-dropdown {
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.3s linear;
-    transition: max-height 0.3s linear;
-  }
-  .extrapadding {
-    padding: 22px 51px 25px 44px;
+    width: 75px;
   }
   .arrow-toggler {
-    position: absolute;
-    top: 26px;
+    width: 36px;
+    top: 17px;
     right: 26px;
-    -webkit-transition: -webkit-transform 0.5s ease;
-    transition: -webkit-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-    cursor: pointer;
-  }
-  .rotated {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
   }
   .starting-dates {
-    position: absolute;
-    border-radius: 45px;
-    border: 5px solid var(--BLUE, #123cce);
-    background: #fff;
-    display: block;
-    top: 3.12vw;
-    right: -1.6vw;
-    padding: 0.8vw 1.35vw 0.8vw 1.53vw;
+    top: -21px;
+    right: -22px;
+    padding: 8px 22px;
   }
   .starting-dates-text {
-    color: var(--BLUE, #123cce);
-    font-size: 1.37vw;
-    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
   }
   .button {
     -ms-flex-negative: 0;
@@ -1150,7 +1132,6 @@ p {
     color: #fff;
     text-align: center;
     font-size: 1.37vw;
-    font-weight: 700;
     -webkit-transition: background-color 0.2s ease;
     transition: background-color 0.2s ease;
   }
@@ -1206,7 +1187,7 @@ p {
 .lek-cours__content-right {
   width: 50%;
 }
-.lek-cours__content-right iframe {
+.lek-cours__content-video iframe {
   width: 100%;
   height: 100%;
   max-width: 677px;
@@ -1259,8 +1240,6 @@ p {
   display: flex;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.8s ease;
-  transition: max-height 0.8s ease;
   -webkit-transition: margin-top 0.5s ease;
   transition: margin-top 0.5s ease;
 }
@@ -1298,7 +1277,7 @@ p:first-of-type .lek-description__subtitle {
     padding: 15px 30px;
   }
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1024px) {
   .lek__img {
     top: -80px;
     right: 1vw;
@@ -1320,114 +1299,69 @@ p:first-of-type .lek-description__subtitle {
   }
   .lek-cours__content {
     display: block;
-    margin-top: 26px;
+    margin-top: 36px;
   }
   .lek-cours__content-list {
-    margin-top: 59px;
+    margin-top: 28px;
   }
   .lek-cours__content-right {
-    width: 50%;
+    display: none;
   }
-  .lek-cours__content-right iframe {
+  .lek-cours__content-video {
+    margin-top: 40px;
+  }
+  .lek-cours__content-video iframe {
     width: 100%;
-    height: 100%;
-    max-width: 677px;
-    max-height: 400px;
+    height: 299px;
+    max-width: auto;
+    max-height: auto;
   }
   .lek-cours__content-left {
     width: 100%;
   }
   .lek-cours__content-left h3 {
     font-size: 20px;
-    line-height: 0px;
+    line-height: 21px;
     letter-spacing: 0px;
   }
   .lek-cours__content-left-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 52px;
+    margin-top: 37px;
   }
   .lek-cours__content-left-bottom p {
-    color: var(--BLUE, #123cce);
-    text-align: center;
-    font-size: 1.05vw;
-    font-style: normal;
-    font-weight: 700;
-    margin: auto 52px auto 45px;
-  }
-  .lek-cours__content-left-bottom a {
-    width: 17.7vw;
-    padding: 0.77vw 1.6vw;
-  }
-  .lek-description {
-    margin-top: 16px;
-    padding: 29px 77px 34px 39px;
-    border-radius: 11px;
-    background: var(--light-blue, #f3f5fc);
-  }
-  .lek-description h4 {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 33.627px;
-  }
-  .lek-description__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.8s ease;
-    transition: max-height 0.8s ease;
-    -webkit-transition: margin-top 0.5s ease;
-    transition: margin-top 0.5s ease;
-  }
-  .lek-description__content-left {
-    margin-right: 84px;
-    max-width: 50%;
-  }
-  .lek-description__subtitle {
-    margin-top: 26px;
-    display: inline-block;
-  }
-  p:first-of-type .lek-description__subtitle {
-    margin-top: 0;
-  }
-  .lek__img {
-    right: 1vw;
-  }
-  .lek-list li {
     font-size: 18px;
     line-height: 23px;
     letter-spacing: 0px;
-  }
-  .lek-cours__content {
-    display: block;
-  }
-  .lek-cours__content-right {
-    width: 100%;
-  }
-  .lek-cours__content-left {
-    width: 100%;
-  }
-  .lek-cours__content-left-bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 52px;
-  }
-  .lek-cours__content-left-bottom p {
-    font-size: 20px;
+    margin: auto auto;
   }
   .lek-cours__content-left-bottom a {
-    width: 337px;
-    padding: 15px 30px;
+    width: 60%;
+    margin: auto auto;
+    padding: 8px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .lek-description {
+    margin-top: 16px;
+    padding: 21px 73px 21px 30px;
+  }
+  .lek-description h4 {
+    font-size: 20px;
+    line-height: 25.63px;
+  }
+  .lek-description__content {
+    display: block;
+  }
+  .lek-description__content-left {
+    margin-right: 0px;
+    max-width: 100%;
+  }
+  .lek-description__subtitle {
+    margin-top: 26px;
+  }
+  p:first-of-type .lek-description__subtitle {
+    margin-top: 0;
   }
 }
 .courses {
@@ -1559,6 +1493,51 @@ p:first-of-type .lek-description__subtitle {
   .courses__description-bottom a {
     padding: 13px 30px;
     margin-left: 12px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .courses {
+    margin-top: 100px;
+    padding-bottom: 150px;
+  }
+  .courses__img.up {
+    width: 420px;
+  }
+  .courses__img.down {
+    width: 290px;
+  }
+  .courses__title {
+    padding-top: 60px;
+    margin-bottom: 68px;
+  }
+  .courses__info {
+    padding: 47px 34px 36px 32px;
+    margin-top: 55px;
+  }
+  .courses__description {
+    display: block;
+  }
+  .courses__description-half p {
+    width: 88%;
+  }
+  .courses__description-half a {
+    max-width: 65%;
+    margin-top: 15px;
+    display: inline-block;
+    padding: 8px 28px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .courses__description-half a:first-child {
+    margin-top: 34px;
+  }
+  .courses__description-bottom {
+    margin-top: 32px;
+  }
+  .courses__description-box {
+    display: none;
   }
 }
 .disclaimer {
@@ -1703,6 +1682,10 @@ p:first-of-type .lek-description__subtitle {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 44px;
+}
+
+.extrapadding {
+  padding: 22px 51px 25px 44px;
 }
 
 .guide {
