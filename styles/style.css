@@ -1609,6 +1609,43 @@ p:first-of-type .lek-description__subtitle {
     display: none;
   }
 }
+@media screen and (max-width: 498px) {
+  .courses {
+    margin-top: 80px;
+    padding-bottom: 100px;
+  }
+  .courses__img.up {
+    width: 276px;
+  }
+  .courses__img.down {
+    width: 207px;
+  }
+  .courses__title {
+    padding-top: 60px;
+    margin-bottom: 68px;
+  }
+  .courses__info {
+    padding: 47px 34px 36px 32px;
+    margin-top: 55px;
+  }
+  .courses__description-half a {
+    max-width: 85%;
+    padding: 4px 20px;
+    display: block;
+    margin: 12px auto;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .courses__description-bottom {
+    margin-top: 32px;
+  }
+  .courses__description-bottom .description-text {
+    margin-left: 12px;
+  }
+  .courses__description-box {
+    display: none;
+  }
+}
 .disclaimer {
   background-color: #fff;
   height: 10vw;
@@ -1634,20 +1671,40 @@ p:first-of-type .lek-description__subtitle {
 }
 
 @media screen and (min-width: 2001px) {
-  .courses {
-    padding-bottom: 198px;
-  }
-  .courses__img.up {
-    max-width: 1000px;
-  }
-  .courses__info {
-    margin-top: 100px;
-  }
   .disclaimer {
     height: 200px;
   }
   .disclaimer img {
     max-width: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .disclaimer {
+    height: 156px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .disclaimer img {
+    width: 45px;
+  }
+  .disclaimer a {
+    margin-top: 10px;
+    width: 548px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 498px) {
+  .disclaimer a {
+    width: 305px;
+    line-height: 30px;
+  }
+  .disclaimer h3 {
+    line-height: 24px;
   }
 }
 .list {

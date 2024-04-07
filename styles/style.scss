@@ -1887,6 +1887,58 @@ p {
     }
 }
 
+@media screen and (max-width: 498px) {
+    .courses {
+        margin-top: 80px;
+        padding-bottom: 100px;
+
+        &__img {
+            &.up {
+                width: 276px;
+            }
+
+            &.down {
+                width: 207px;
+            }
+        }
+
+        &__title {
+            padding-top: 60px;
+            margin-bottom: 68px;
+        }
+
+        &__info {
+            padding: 47px 34px 36px 32px;
+            margin-top: 55px;
+        }
+
+        &__description {
+            &-half {
+                a {
+                    max-width: 85%;
+                    padding: 4px 20px;
+                    display: block;
+                    margin: 12px auto;
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+
+            &-bottom {
+                margin-top: 32px;
+
+                .description-text {
+                    margin-left: 12px;
+                }
+            }
+
+            &-box {
+                display: none;
+            }
+        }
+    }
+}
+
 // ***DISCLAIMER***
 .disclaimer {
     background-color: #fff;
@@ -1910,25 +1962,42 @@ p {
 }
 
 @media screen and (min-width: 2001px) {
-    .courses {
-        padding-bottom: 198px;
-
-        &__img {
-            &.up {
-                max-width: 1000px;
-            }
-        }
-
-        &__info {
-            margin-top: 100px;
-        }
-    }
-
     .disclaimer {
         height: 200px;
 
         & img {
             max-width: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .disclaimer {
+        height: 156px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        & img {
+            width: 45px;
+        }
+
+        & a {
+            margin-top: 10px;
+            width: 548px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .disclaimer {
+        & a {
+            width: 305px;
+            line-height: 30px;
+        }
+
+        & h3 {
+            line-height: 24px;
         }
     }
 }
