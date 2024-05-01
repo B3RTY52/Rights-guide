@@ -158,7 +158,7 @@ p {
 }
 @media screen and (max-width: 1024px) {
   .container {
-    max-width: 548px;
+    max-width: 748px;
   }
   .tablet {
     display: block;
@@ -262,7 +262,7 @@ p {
     font-size: 35px;
   }
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1024px) {
   .banner {
     height: 405px;
     background: url("/IMG/Tablet.png") center/cover no-repeat;
@@ -441,7 +441,7 @@ p {
     line-height: 26px;
   }
 }
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1024px) {
   .categories {
     margin-top: 51px;
   }
@@ -454,8 +454,8 @@ p {
     margin-top: 46px;
   }
   .categories__list-item {
-    max-width: 128px;
-    max-height: 128px;
+    max-width: 176px;
+    max-height: 176px;
     -webkit-box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 1px 2px 8px 0px rgba(0, 0, 0, 0.25);
   }
@@ -465,25 +465,23 @@ p {
   .categories__list .last-item {
     padding: 11px 7px;
   }
+  .categories__list-list {
+    height: auto;
+  }
   .categories__list h4 {
-    font-size: 12px;
-    line-height: 12.832px;
+    font-size: 16px;
+    line-height: 17px;
   }
   .categories__list p {
-    margin-top: 7px;
-    font-size: 8.5px;
-    line-height: 9.981px;
+    font-size: 11px;
+    line-height: 13px;
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 868px) {
   .categories__list {
     margin-top: 24px;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-  }
-  .categories__list-item {
-    max-width: 176px;
-    max-height: 176px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1867,6 +1865,105 @@ p:first-of-type .lek-description__subtitle {
   .list__menu-title {
     font-size: 48px;
     line-height: 53px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .list {
+    padding-top: 45px;
+  }
+  .list__title {
+    width: 100%;
+    max-height: 306px;
+  }
+  .list__title img {
+    width: auto;
+    height: auto;
+  }
+  .list__title-wrapper {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .list__title-name {
+    font-size: 4.95vw;
+    line-height: 95%;
+    letter-spacing: 1.88px;
+    text-align: center;
+  }
+  .list__title-amount {
+    text-transform: uppercase;
+    margin-top: 46px;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .list__menu-description {
+    margin: 38px auto;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+  }
+  .list__menu-list {
+    margin-top: 9.5vw;
+  }
+  .list__menu-list li {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .list__menu-list li:hover {
+    -webkit-transform: translate(4px);
+            transform: translate(4px);
+  }
+  .list__menu-link {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .list__menu-title {
+    padding: 28px 60px 28px 48px;
+    font-size: 3vw;
+    line-height: 3.2vw;
+  }
+  .list__menu-about {
+    padding: 18px 60px 18px 48px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 3px;
+    text-align: left;
+    text-transform: uppercase;
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  .list__menu-about::before {
+    content: "•"; /* Юникод для круглого маркера */
+    font-size: 1.2em; /* Размер маркера, при необходимости */
+    margin-right: 8px; /* Расстояние между маркером и текстом абзаца */
+  }
+  .list__bottom {
+    margin-top: 113px;
+    padding-top: 75px;
+    background: rgb(255, 255, 255);
+  }
+  .list__bottom-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 44px;
   }
 }
 .extrapadding {
