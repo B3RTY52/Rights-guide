@@ -1872,8 +1872,75 @@ p:first-of-type .lek-description__subtitle {
     padding-top: 45px;
   }
   .list__title {
-    width: 100%;
     max-height: 306px;
+  }
+  .list__title-name {
+    font-size: 48px;
+    line-height: 49px;
+    letter-spacing: 1px;
+  }
+  .list__title-amount {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3.5px;
+  }
+  .list__menu-description {
+    margin: 22px auto;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .list__menu-list {
+    margin-top: 85px;
+  }
+  .list__menu-list li {
+    margin-top: 30px;
+  }
+  .list__menu-title {
+    padding: 30px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0px;
+  }
+  .list__menu-about {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  .list__menu-about::before {
+    margin-right: 5px; /* Расстояние между маркером и текстом абзаца */
+  }
+  .list__bottom {
+    padding-top: 50px;
+  }
+  .list__bottom-subtitle {
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+  }
+  .slides-item {
+    max-width: 176px;
+    max-height: 176px;
+  }
+  .slides-arrow {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .slides-arrow {
+    top: 37%;
+    height: 70px;
+    z-index: 10;
+  }
+  .slides .left {
+    display: none;
+  }
+}
+@media screen and (max-width: 498px) {
+  .list__title {
+    width: 100%;
   }
   .list__title img {
     width: auto;

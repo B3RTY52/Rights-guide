@@ -2197,8 +2197,100 @@ p {
         padding-top: 45px;
 
         &__title {
-            width: 100%;
             max-height: 306px;
+
+            &-name {
+                font-size: 48px;
+                line-height: 49px;
+                letter-spacing: 1px;
+            }
+
+            &-amount {
+                margin-top: 18px;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 3.5px;
+            }
+        }
+
+        &__menu {
+            &-description {
+                margin: 22px auto;
+                font-size: 20px;
+                line-height: 25px;
+                letter-spacing: 0px;
+            }
+
+            &-list {
+                margin-top: 85px;
+
+                li {
+                    margin-top: 30px;
+                }
+            }
+
+            &-title {
+                padding: 30px;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 0px;
+            }
+
+            &-about {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+
+                &::before {
+                    margin-right: 5px; /* Расстояние между маркером и текстом абзаца */
+                }
+            }
+        }
+
+        &__bottom {
+            padding-top: 50px;
+
+            &-subtitle {
+                font-size: 26px;
+                line-height: 33px;
+                letter-spacing: 0px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .slides {
+        &-item {
+            max-width: 176px;
+            max-height: 176px;
+        }
+        &-arrow {
+            top: 40%;
+            // height: 70px;
+        }
+    }
+}
+
+// *******  СТРЕЛКИ СЛАЙДЕРА  *******
+@media screen and (max-width: 650px) {
+    .slides {
+        &-arrow {
+            top: 37%;
+            height: 70px;
+            z-index: 10;
+        }
+
+        .left {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .list {
+        &__title {
+            width: 100%;
+            // max-height: 306px;
 
             & img {
                 width: auto;
