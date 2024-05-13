@@ -2605,6 +2605,7 @@ p {
             font-size: 1.35vw;
             line-height: 1.65vw;
         }
+
         p {
             font-size: 0.8vw;
             line-height: 1.2vw;
@@ -2695,6 +2696,105 @@ p {
                 font-size: 16px;
                 line-height: 20px;
                 letter-spacing: normal;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .extrapadding {
+        padding: 22px 51px 25px 44px;
+    }
+
+    .guide {
+        padding-top: 46px;
+
+        &__title {
+            & h2 {
+                padding: 26px;
+            }
+
+            &-about {
+                padding: 26px;
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+
+                &::before {
+                    content: "\2022"; /* Юникод для круглого маркера */
+                    font-size: 1.2em; /* Размер маркера, при необходимости */
+                    margin-right: 6px; /* Расстояние между маркером и текстом абзаца */
+                }
+            }
+        }
+
+        &__content {
+            margin-top: 48px;
+            display: block;
+
+            &-cards {
+                margin-left: 0px;
+            }
+
+            &-item {
+                margin-bottom: 24px;
+            }
+
+            &-dropdown {
+                padding: 16px 57px 0 28px;
+
+                img {
+                    top: 11px;
+                    height: 34px;
+                }
+
+                h4 {
+                    padding-bottom: 16px;
+                }
+            }
+
+            &-shablon {
+                padding: 25px 40px;
+
+                &::before {
+                    height: 40px;
+                    width: 40px;
+                }
+            }
+        }
+
+        .item-padding {
+            padding: 0 38px 16px 28px;
+        }
+
+        &-cards {
+            margin-top: 0px;
+        }
+    }
+
+    .sticky {
+        display: none;
+    }
+
+    .slides-field {
+        .reducer {
+            width: 57vw;
+            max-width: 552px;
+            max-height: fit-content;
+
+            h2 {
+                font-size: 26px;
+                line-height: 33px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 20px;
+                letter-spacing: 0.5px;
+            }
+
+            &:hover {
+                transform: translate(0px, -5px);
             }
         }
     }

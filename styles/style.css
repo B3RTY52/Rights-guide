@@ -2295,6 +2295,84 @@ p:first-of-type .lek-description__subtitle {
     letter-spacing: normal;
   }
 }
+@media screen and (max-width: 1024px) {
+  .extrapadding {
+    padding: 22px 51px 25px 44px;
+  }
+  .guide {
+    padding-top: 46px;
+  }
+  .guide__title h2 {
+    padding: 26px;
+  }
+  .guide__title-about {
+    padding: 26px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  .guide__title-about::before {
+    content: "•"; /* Юникод для круглого маркера */
+    font-size: 1.2em; /* Размер маркера, при необходимости */
+    margin-right: 6px; /* Расстояние между маркером и текстом абзаца */
+  }
+  .guide__content {
+    margin-top: 48px;
+    display: block;
+  }
+  .guide__content-cards {
+    margin-left: 0px;
+  }
+  .guide__content-item {
+    margin-bottom: 24px;
+  }
+  .guide__content-dropdown {
+    padding: 16px 57px 0 28px;
+  }
+  .guide__content-dropdown img {
+    top: 11px;
+    height: 34px;
+  }
+  .guide__content-dropdown h4 {
+    padding-bottom: 16px;
+  }
+  .guide__content-shablon {
+    padding: 25px 40px;
+  }
+  .guide__content-shablon::before {
+    height: 40px;
+    width: 40px;
+  }
+  .guide .item-padding {
+    padding: 0 38px 16px 28px;
+  }
+  .guide-cards {
+    margin-top: 0px;
+  }
+  .sticky {
+    display: none;
+  }
+  .slides-field .reducer {
+    width: 57vw;
+    max-width: 552px;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .slides-field .reducer h2 {
+    font-size: 26px;
+    line-height: 33px;
+  }
+  .slides-field .reducer p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+  }
+  .slides-field .reducer:hover {
+    -webkit-transform: translate(0px, -5px);
+            transform: translate(0px, -5px);
+  }
+}
 .aboutus h3 {
   font-size: 2.3vw;
   font-weight: 700;
