@@ -2372,7 +2372,8 @@ p {
         }
 
         &-arrow {
-            height: 40px;
+            top: 40%;
+            height: 60px;
         }
 
         .right {
@@ -2517,8 +2518,7 @@ p {
         &-consultation {
             margin-top: 1vw;
             margin-left: 51px;
-            padding: 0.8vw 1.3vw;
-            // padding: 10px 21px;
+            padding: 10px 21px;
             max-width: 253px;
             max-height: 61.07px;
             border-radius: 4.13px;
@@ -2673,7 +2673,7 @@ p {
             &-consultation {
                 margin-top: 32px;
                 margin-left: 51px;
-                padding: 10px 21px;
+                // padding: 10px 21px;
 
                 img {
                     margin-right: 30px;
@@ -2721,7 +2721,6 @@ p {
                 letter-spacing: 0.5px;
 
                 &::before {
-                    content: "\2022"; /* Юникод для круглого маркера */
                     font-size: 1.2em; /* Размер маркера, при необходимости */
                     margin-right: 6px; /* Расстояние между маркером и текстом абзаца */
                 }
@@ -2777,9 +2776,10 @@ p {
     }
 
     .slides-field {
+        margin-bottom: 45px;
+
         .reducer {
             width: 57vw;
-            max-width: 552px;
             max-height: fit-content;
 
             h2 {
@@ -2792,9 +2792,74 @@ p {
                 line-height: 20px;
                 letter-spacing: 0.5px;
             }
+        }
+    }
+}
 
-            &:hover {
-                transform: translate(0px, -5px);
+@media screen and (max-width: 498px) {
+    .extrapadding {
+        padding: 18px 27px;
+    }
+
+    .guide {
+        padding-top: 40px;
+
+        &__title {
+            & h2 {
+                padding: 17px;
+            }
+
+            &-about {
+                padding: 16px;
+                font-size: 11px;
+                line-height: 14px;
+                letter-spacing: 0.3px;
+
+                &::before {
+                    font-size: 1em; /* Размер маркера, при необходимости */
+                    margin-right: 4px; /* Расстояние между маркером и текстом абзаца */
+                }
+            }
+        }
+
+        &__content {
+            margin-top: 43px;
+
+            &-dropdown {
+                padding: 16px 50px 0 28px;
+            }
+
+            &-shablon {
+                padding: 15px 40px;
+
+                &::before {
+                    height: 36px;
+                    width: 36px;
+                }
+            }
+
+            &-consultation {
+                margin: 0 auto;
+                padding: 10px 21px;
+                max-width: 75%;
+            }
+        }
+    }
+
+    .slides-field {
+        .reducer {
+            width: 67vw;
+            max-width: 343px;
+
+            h2 {
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            p {
+                font-size: 10px;
+                line-height: 13px;
+                letter-spacing: 0.3px;
             }
         }
     }

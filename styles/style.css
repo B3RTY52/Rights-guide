@@ -2004,7 +2004,8 @@ p:first-of-type .lek-description__subtitle {
     line-height: 9.11px;
   }
   .slides-arrow {
-    height: 40px;
+    top: 40%;
+    height: 60px;
   }
   .slides .right {
     right: 0;
@@ -2124,7 +2125,7 @@ p:first-of-type .lek-description__subtitle {
 .guide__content-consultation {
   margin-top: 1vw;
   margin-left: 51px;
-  padding: 0.8vw 1.3vw;
+  padding: 10px 21px;
   max-width: 253px;
   max-height: 61.07px;
   border-radius: 4.13px;
@@ -2277,7 +2278,6 @@ p:first-of-type .lek-description__subtitle {
   .guide__content-consultation {
     margin-top: 32px;
     margin-left: 51px;
-    padding: 10px 21px;
   }
   .guide__content-consultation img {
     margin-right: 30px;
@@ -2312,7 +2312,6 @@ p:first-of-type .lek-description__subtitle {
     letter-spacing: 0.5px;
   }
   .guide__title-about::before {
-    content: "•"; /* Юникод для круглого маркера */
     font-size: 1.2em; /* Размер маркера, при необходимости */
     margin-right: 6px; /* Расстояние между маркером и текстом абзаца */
   }
@@ -2352,9 +2351,11 @@ p:first-of-type .lek-description__subtitle {
   .sticky {
     display: none;
   }
+  .slides-field {
+    margin-bottom: 45px;
+  }
   .slides-field .reducer {
     width: 57vw;
-    max-width: 552px;
     max-height: -webkit-fit-content;
     max-height: -moz-fit-content;
     max-height: fit-content;
@@ -2368,9 +2369,57 @@ p:first-of-type .lek-description__subtitle {
     line-height: 20px;
     letter-spacing: 0.5px;
   }
-  .slides-field .reducer:hover {
-    -webkit-transform: translate(0px, -5px);
-            transform: translate(0px, -5px);
+}
+@media screen and (max-width: 498px) {
+  .extrapadding {
+    padding: 18px 27px;
+  }
+  .guide {
+    padding-top: 40px;
+  }
+  .guide__title h2 {
+    padding: 17px;
+  }
+  .guide__title-about {
+    padding: 16px;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+  }
+  .guide__title-about::before {
+    font-size: 1em; /* Размер маркера, при необходимости */
+    margin-right: 4px; /* Расстояние между маркером и текстом абзаца */
+  }
+  .guide__content {
+    margin-top: 43px;
+  }
+  .guide__content-dropdown {
+    padding: 16px 50px 0 28px;
+  }
+  .guide__content-shablon {
+    padding: 15px 40px;
+  }
+  .guide__content-shablon::before {
+    height: 36px;
+    width: 36px;
+  }
+  .guide__content-consultation {
+    margin: 0 auto;
+    padding: 10px 21px;
+    max-width: 75%;
+  }
+  .slides-field .reducer {
+    width: 67vw;
+    max-width: 343px;
+  }
+  .slides-field .reducer h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .slides-field .reducer p {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.3px;
   }
 }
 .aboutus h3 {
