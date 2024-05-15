@@ -2425,8 +2425,8 @@ p:first-of-type .lek-description__subtitle {
 .aboutus h3 {
   font-size: 2.3vw;
   font-weight: 700;
-  line-height: 102%;
-  letter-spacing: 2%;
+  line-height: 2.4vw;
+  letter-spacing: 3px;
   text-align: center;
 }
 .aboutus-title {
@@ -2473,7 +2473,6 @@ p:first-of-type .lek-description__subtitle {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 11px;
-  padding: 33px 49px 40px 50px;
   padding: 1vw 1vw 1vw 1vw;
 }
 .gethelp__field-right h3 {
@@ -2498,13 +2497,14 @@ p:first-of-type .lek-description__subtitle {
   width: 50%;
   font-size: 1.245vw;
   font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0%;
+  line-height: 1.3vw;
+  letter-spacing: 0px;
   text-align: left;
 }
 
 .joinus {
   margin-top: 60px;
+  margin-bottom: 300px;
 }
 .joinus .bggrey {
   background: rgb(247, 247, 247);
@@ -2566,7 +2566,7 @@ p:first-of-type .lek-description__subtitle {
   text-align: left;
 }
 .joinus__content-right p {
-  font-style: 1vw;
+  font-size: 1vw;
   font-weight: 500;
   line-height: 2.3vw;
   letter-spacing: 2px;
@@ -2581,7 +2581,7 @@ p:first-of-type .lek-description__subtitle {
   font-size: 1.245vw;
   font-weight: 400;
   line-height: 30px;
-  letter-spacing: 0%;
+  letter-spacing: 0px;
   text-align: left;
 }
 .joinus__content-arrow {
@@ -2610,4 +2610,78 @@ p:first-of-type .lek-description__subtitle {
 .joinus__content .gd-img {
   margin: auto;
   width: 100%;
+}
+
+@media screen and (min-width: 2001px) {
+  .aboutus h3 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 1px;
+  }
+  .gethelp__field-right a {
+    padding: 44px 49px 40px 50px;
+    max-width: 620px;
+  }
+  .gethelp__field-right h3 {
+    font-size: 44px;
+    line-height: 46px;
+    letter-spacing: 1px;
+  }
+  .gethelp__field-right img {
+    height: 80px;
+  }
+  .gethelp__field-left {
+    font-size: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .joinus__field {
+    padding: 40px 51px 44px 37px;
+  }
+  .joinus__content {
+    margin-top: 60px;
+    margin-bottom: 160px;
+  }
+  .joinus__content-right a {
+    margin-top: 40px;
+    padding: 36px 17px 25px 47px;
+  }
+  .joinus__content-right h3 {
+    width: 380px;
+  }
+  .joinus__content-right p {
+    font-size: 20px;
+    line-height: 65px;
+  }
+  .joinus__content-right .tg-logo {
+    height: 90px;
+    margin-right: 60px;
+  }
+  .joinus__content-left {
+    font-size: 24px;
+  }
+  .joinus__content-arrow {
+    position: relative;
+    height: 10rem;
+  }
+  .joinus__content-arrow img {
+    height: auto;
+    width: 368px;
+    position: absolute;
+    left: -220px;
+  }
+  .joinus__content .shablons-img {
+    margin: auto;
+    width: 100%;
+    max-width: 621px;
+    max-height: 224px;
+  }
+  .joinus__content .gd {
+    margin-left: 10vw;
+  }
+  .joinus__content .gd-img {
+    margin: auto;
+    width: 100%;
+  }
 }

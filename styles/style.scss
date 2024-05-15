@@ -2872,8 +2872,8 @@ p {
         font-size: 2.3vw;
         // font-size: 44px;
         font-weight: 700;
-        line-height: 102%;
-        letter-spacing: 2%;
+        line-height: 2.4vw;
+        letter-spacing: 3px;
         text-align: center;
     }
 
@@ -2908,7 +2908,7 @@ p {
                 justify-content: space-between;
                 align-items: center;
                 border-radius: 11px;
-                padding: 33px 49px 40px 50px;
+                // padding: 33px 49px 40px 50px;
                 padding: 1vw 1vw 1vw 1vw;
             }
 
@@ -2935,8 +2935,8 @@ p {
             font-size: 1.245vw;
             // font-size: 24px;
             font-weight: 400;
-            line-height: 30px;
-            letter-spacing: 0%;
+            line-height: 1.3vw;
+            letter-spacing: 0px;
             text-align: left;
         }
     }
@@ -2944,6 +2944,7 @@ p {
 
 .joinus {
     margin-top: 60px;
+    margin-bottom: 300px;
 
     .bggrey {
         background: rgb(247, 247, 247);
@@ -2996,7 +2997,7 @@ p {
 
             p {
                 // font-size: 20px;
-                font-style: 1vw;
+                font-size: 1vw;
                 font-weight: 500;
                 line-height: 2.3vw;
                 // line-height: 75.68px;
@@ -3016,7 +3017,7 @@ p {
             // font-size: 24px;
             font-weight: 400;
             line-height: 30px;
-            letter-spacing: 0%;
+            letter-spacing: 0px;
             text-align: left;
         }
 
@@ -3047,6 +3048,107 @@ p {
             &-img {
                 margin: auto;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 2001px) {
+    .aboutus {
+        h3 {
+            font-size: 44px;
+            font-weight: 700;
+            line-height: 46px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .gethelp {
+        &__field {
+            &-right {
+                a {
+                    padding: 44px 49px 40px 50px;
+                    max-width: 620px;
+                }
+
+                h3 {
+                    font-size: 44px;
+                    line-height: 46px;
+                    letter-spacing: 1px;
+                }
+
+                img {
+                    height: 80px;
+                }
+            }
+
+            &-left {
+                font-size: 24px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+        }
+    }
+
+    .joinus {
+        &__field {
+            padding: 40px 51px 44px 37px;
+        }
+
+        &__content {
+            margin-top: 60px;
+            margin-bottom: 160px;
+
+            &-right {
+                a {
+                    margin-top: 40px;
+                    padding: 36px 17px 25px 47px;
+                }
+
+                h3 {
+                    width: 380px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 65px;
+                }
+
+                .tg-logo {
+                    height: 90px;
+                    margin-right: 60px;
+                }
+            }
+
+            &-left {
+                font-size: 24px;
+            }
+
+            &-arrow {
+                position: relative;
+                height: 10rem;
+
+                img {
+                    height: auto;
+                    width: 368px;
+                    position: absolute;
+                    left: -220px;
+                }
+            }
+
+            .shablons-img {
+                margin: auto;
+                width: 100%;
+                max-width: 621px;
+                max-height: 224px;
+            }
+
+            .gd {
+                margin-left: 10vw;
+                &-img {
+                    margin: auto;
+                    width: 100%;
+                }
             }
         }
     }
