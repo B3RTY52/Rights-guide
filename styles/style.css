@@ -2501,10 +2501,12 @@ p:first-of-type .lek-description__subtitle {
   letter-spacing: 0px;
   text-align: left;
 }
+.gethelp .title-mobile {
+  display: none;
+}
 
 .joinus {
   margin-top: 60px;
-  margin-bottom: 300px;
 }
 .joinus .bggrey {
   background: rgb(247, 247, 247);
@@ -2611,6 +2613,9 @@ p:first-of-type .lek-description__subtitle {
   margin: auto;
   width: 100%;
 }
+.joinus:last-child {
+  margin-bottom: 300px;
+}
 
 @media screen and (min-width: 2001px) {
   .aboutus h3 {
@@ -2641,7 +2646,6 @@ p:first-of-type .lek-description__subtitle {
   }
   .joinus__content {
     margin-top: 60px;
-    margin-bottom: 160px;
   }
   .joinus__content-right a {
     margin-top: 40px;
@@ -2661,27 +2665,211 @@ p:first-of-type .lek-description__subtitle {
   .joinus__content-left {
     font-size: 24px;
   }
-  .joinus__content-arrow {
-    position: relative;
-    height: 10rem;
-  }
   .joinus__content-arrow img {
-    height: auto;
     width: 368px;
-    position: absolute;
+    top: -50px;
     left: -220px;
   }
-  .joinus__content .shablons-img {
-    margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  .aboutus p {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+  .aboutus h3 {
+    font-size: 26px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+  }
+  .aboutus-title {
+    margin: 0 0 35px 0;
+    font-size: 32px;
+    line-height: 33px;
+    letter-spacing: 0.6px;
+  }
+  .aboutus .title {
+    display: none;
+  }
+  .gethelp {
+    margin-top: 80px;
+  }
+  .gethelp__field {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .gethelp__field-right {
+    width: 80%;
+    margin: 0 auto 35px;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+  .gethelp__field-right a {
     width: 100%;
-    max-width: 621px;
-    max-height: 224px;
+    padding: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .gethelp__field-right h3 {
+    width: 250px;
+    margin-right: 20px;
+  }
+  .gethelp__field-right img {
+    height: 80px;
+    width: 80px;
+  }
+  .gethelp__field-left {
+    padding: 35px 35px 55px 33px;
+    width: 100%;
+  }
+  .gethelp .title-mobile {
+    display: block;
+    border-bottom: 1.48px dashed rgba(0, 0, 0, 0.2);
+    padding: 35px 35px 55px 33px;
+  }
+  .joinus {
+    margin-top: 52px;
+  }
+  .joinus h2 {
+    margin-bottom: 35px;
+    font-size: 32px;
+    line-height: 33px;
+    letter-spacing: 0.6px;
+  }
+  .joinus__field {
+    padding: 35px 34px 32px 32px;
+  }
+  .joinus__content {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .joinus__content-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-left: 0px;
+  }
+  .joinus__content-right a {
+    margin: 45px auto 0;
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+    padding: 26px 26px 10px 26px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 90%;
+  }
+  .joinus__content-right h3 {
+    width: 250px;
+  }
+  .joinus__content-right p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 57px;
+  }
+  .joinus__content-right .tg-logo {
+    margin-right: 0;
+    height: 68px;
+  }
+  .joinus__content-left {
+    width: 100%;
+  }
+  .joinus__content-arrow {
+    height: 5rem;
+  }
+  .joinus__content-arrow img {
+    height: 140px;
+    width: 147px;
+    top: 0;
+    left: 50%;
+    -webkit-transform: rotate(165deg);
+            transform: rotate(165deg);
+  }
+  .joinus__content .shablons-img {
+    margin: 45px auto 0;
   }
   .joinus__content .gd {
-    margin-left: 10vw;
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .joinus__content .gd-img {
-    margin: auto;
+    margin: 45px auto 0;
+    width: 70%;
+  }
+  .joinus:last-child {
+    margin-bottom: 140px;
+  }
+}
+@media screen and (max-width: 498px) {
+  .gethelp {
+    margin-top: 60px;
+  }
+  .gethelp__field-right {
+    margin: 0 auto 17px;
+  }
+  .gethelp__field-right a {
+    padding: 8px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gethelp__field-right h3 {
+    width: inherit;
+    margin-right: 5%;
+  }
+  .gethelp__field-right img {
+    height: 60px;
+    width: 60px;
+  }
+  .joinus {
+    margin-top: 25px;
+  }
+  .joinus__content-right a {
+    padding: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     width: 100%;
+  }
+  .joinus__content-right h3 {
+    width: inherit;
+  }
+  .joinus__content-right p {
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .joinus__content-right .tg-logo {
+    margin-right: 5px;
+    height: 44px;
+  }
+  .joinus__content-arrow img {
+    left: 40%;
+    -webkit-transform: rotate(165deg);
+            transform: rotate(165deg);
+  }
+  .joinus__content .shablons-img {
+    margin: 35px auto 0;
+  }
+  .joinus__content .gd-img {
+    width: 90%;
+  }
+  .joinus:last-child {
+    margin-bottom: 105px;
   }
 }
